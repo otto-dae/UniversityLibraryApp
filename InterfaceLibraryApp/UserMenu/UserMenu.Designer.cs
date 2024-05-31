@@ -47,6 +47,7 @@
             CommentPrompt5 = new Label();
             CommentPrompt6 = new Label();
             CommentUserButton = new Button();
+            DisplayUserLoansButton = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -161,6 +162,7 @@
             MakeaLoanButton.TabIndex = 9;
             MakeaLoanButton.Text = "Realizar Prestamo";
             MakeaLoanButton.UseVisualStyleBackColor = true;
+            MakeaLoanButton.Click += MakeaLoanButton_Click;
             // 
             // TransferBookUserButton
             // 
@@ -188,7 +190,7 @@
             // 
             CommentPrompt1.AutoSize = true;
             CommentPrompt1.Font = new Font("Segoe UI", 10F);
-            CommentPrompt1.Location = new Point(302, 336);
+            CommentPrompt1.Location = new Point(302, 354);
             CommentPrompt1.Name = "CommentPrompt1";
             CommentPrompt1.Size = new Size(168, 23);
             CommentPrompt1.TabIndex = 12;
@@ -198,7 +200,7 @@
             // 
             CommentPrompt2.AutoSize = true;
             CommentPrompt2.Font = new Font("Segoe UI", 10F);
-            CommentPrompt2.Location = new Point(302, 359);
+            CommentPrompt2.Location = new Point(302, 377);
             CommentPrompt2.Name = "CommentPrompt2";
             CommentPrompt2.Size = new Size(114, 23);
             CommentPrompt2.TabIndex = 13;
@@ -208,7 +210,7 @@
             // 
             CommentPrompt3.AutoSize = true;
             CommentPrompt3.Font = new Font("Segoe UI", 10F);
-            CommentPrompt3.Location = new Point(302, 384);
+            CommentPrompt3.Location = new Point(302, 402);
             CommentPrompt3.Name = "CommentPrompt3";
             CommentPrompt3.Size = new Size(159, 23);
             CommentPrompt3.TabIndex = 14;
@@ -218,7 +220,7 @@
             // 
             CommentPrompt4.AutoSize = true;
             CommentPrompt4.Font = new Font("Segoe UI", 10F);
-            CommentPrompt4.Location = new Point(302, 407);
+            CommentPrompt4.Location = new Point(302, 425);
             CommentPrompt4.Name = "CommentPrompt4";
             CommentPrompt4.Size = new Size(138, 23);
             CommentPrompt4.TabIndex = 15;
@@ -228,7 +230,7 @@
             // 
             CommentPrompt5.AutoSize = true;
             CommentPrompt5.Font = new Font("Segoe UI", 10F);
-            CommentPrompt5.Location = new Point(302, 430);
+            CommentPrompt5.Location = new Point(302, 448);
             CommentPrompt5.Name = "CommentPrompt5";
             CommentPrompt5.Size = new Size(184, 23);
             CommentPrompt5.TabIndex = 16;
@@ -238,7 +240,7 @@
             // 
             CommentPrompt6.AutoSize = true;
             CommentPrompt6.Font = new Font("Segoe UI", 10F);
-            CommentPrompt6.Location = new Point(302, 453);
+            CommentPrompt6.Location = new Point(302, 471);
             CommentPrompt6.Name = "CommentPrompt6";
             CommentPrompt6.Size = new Size(52, 23);
             CommentPrompt6.TabIndex = 17;
@@ -248,12 +250,23 @@
             // 
             CommentUserButton.Font = new Font("Segoe UI", 9F);
             CommentUserButton.ForeColor = Color.Black;
-            CommentUserButton.Location = new Point(302, 479);
+            CommentUserButton.Location = new Point(302, 497);
             CommentUserButton.Name = "CommentUserButton";
             CommentUserButton.Size = new Size(82, 34);
             CommentUserButton.TabIndex = 18;
             CommentUserButton.Text = "Comentar";
             CommentUserButton.UseVisualStyleBackColor = true;
+            // 
+            // DisplayUserLoansButton
+            // 
+            DisplayUserLoansButton.Font = new Font("Segoe UI", 9F);
+            DisplayUserLoansButton.ForeColor = Color.Black;
+            DisplayUserLoansButton.Location = new Point(302, 308);
+            DisplayUserLoansButton.Name = "DisplayUserLoansButton";
+            DisplayUserLoansButton.Size = new Size(159, 29);
+            DisplayUserLoansButton.TabIndex = 19;
+            DisplayUserLoansButton.Text = "Consultar prestamos";
+            DisplayUserLoansButton.UseVisualStyleBackColor = true;
             // 
             // UserMenu
             // 
@@ -261,6 +274,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(13, 53, 115);
             ClientSize = new Size(547, 537);
+            Controls.Add(DisplayUserLoansButton);
             Controls.Add(CommentUserButton);
             Controls.Add(CommentPrompt6);
             Controls.Add(CommentPrompt5);
@@ -311,5 +325,6 @@
         private Label CommentPrompt5;
         private Label CommentPrompt6;
         private Button CommentUserButton;
+        private Button DisplayUserLoansButton;
     }
 }

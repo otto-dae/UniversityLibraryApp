@@ -21,7 +21,6 @@ namespace InterfaceLibraryApp
         private void SearchGenreButton_Click(object sender, EventArgs e)
         {
             string genre = GenreBookTextBox.Text;
-            genre = genre.ToLower().Trim();
             string[] genres = genre.Split(',');
             GenreBookSearchGrid.Rows.Clear();
             int counter = 0;
@@ -30,10 +29,11 @@ namespace InterfaceLibraryApp
             {
                 for(int j = 0; j < genres.Length; j++)
                 {
-                    if (GlobalMatrices.booksMatrix[i, 3].ToLower().Trim().Contains(genres[j]))
+                    if (GlobalMatrices.booksMatrix[i, 3].ToLower().Trim().Contains(genres[j].ToLower().Trim()))
                     {
                         GenreBookSearchGrid.Rows.Add(GlobalMatrices.booksMatrix[i, 0], GlobalMatrices.booksMatrix[i, 2], GlobalMatrices.booksMatrix[i, 3], GlobalMatrices.booksMatrix[i, 1]);
                         counter++;
+                        break;
                     }
                 }
             }

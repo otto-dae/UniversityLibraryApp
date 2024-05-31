@@ -41,8 +41,12 @@ namespace InterfaceLibraryApp
 
         private void SearchByGenreButton_Click(object sender, EventArgs e)
         {
-           SearchBookGenreWindows searchBookGenreWindows = new SearchBookGenreWindows();
-           searchBookGenreWindows.Show();
+            SearchBookGenreWindows searchBookGenreWindows = new SearchBookGenreWindows();
+            searchBookGenreWindows.Show();
+        }
+
+        private void MakeaLoanButton_Click(object sender, EventArgs e)
+        {
         }
     }
 }
