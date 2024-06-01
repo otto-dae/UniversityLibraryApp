@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "InterfaceLibraryApp": {
+      "commandName": "Project",
+      "hotReloadEnabled": false
+    }
+  }
+}

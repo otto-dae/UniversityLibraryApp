@@ -42,7 +42,7 @@ namespace InterfaceLibraryApp
             if (GlobalMatrices.usersMatrix[GlobalUserValues.userIndex, 3] == "User" && GlobalMatrices.usersMatrix[GlobalUserValues.userIndex, 1] == GlobalUserValues.password)
             {
                 this.Hide();
-                UserMenu userWindow = new UserMenu();
+                UserMenu userWindow = new UserMenu(this);
                 userWindow.Show();
             }
         }

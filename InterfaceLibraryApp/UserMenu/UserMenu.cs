@@ -12,11 +12,13 @@ namespace InterfaceLibraryApp
 {
     public partial class UserMenu : Form
     {
-        public UserMenu()
+        Form MainlogIn;
+        public UserMenu(Form LogIn)
         {
             InitializeComponent();
             pictureBox1.Image = Properties.Resources.LOGO_UAQ;
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            MainlogIn = LogIn;
 
             string[] name = GlobalMatrices.usersMatrix[GlobalUserValues.userIndex, 2].Split(' ');
             string userName = name[0];
@@ -55,6 +57,10 @@ namespace InterfaceLibraryApp
         {
             TransferBookUserWindow transferBookUserWindow = new TransferBookUserWindow();
             transferBookUserWindow.Show();
+        }
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            MainlogIn.Close();
         }
     }
 }

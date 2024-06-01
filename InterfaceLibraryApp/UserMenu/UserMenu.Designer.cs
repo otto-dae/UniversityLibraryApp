@@ -48,6 +48,7 @@
             CommentPrompt6 = new Label();
             CommentUserButton = new Button();
             DisplayUserLoansButton = new Button();
+            ExitButton = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -269,12 +270,25 @@
             DisplayUserLoansButton.Text = "Consultar prestamos";
             DisplayUserLoansButton.UseVisualStyleBackColor = true;
             // 
+            // ExitButton
+            // 
+            ExitButton.BackColor = Color.FromArgb(192, 0, 0);
+            ExitButton.ForeColor = Color.Black;
+            ExitButton.Location = new Point(460, 497);
+            ExitButton.Name = "ExitButton";
+            ExitButton.Size = new Size(75, 33);
+            ExitButton.TabIndex = 20;
+            ExitButton.Text = "Salir";
+            ExitButton.UseVisualStyleBackColor = false;
+            ExitButton.Click += ExitButton_Click;
+            // 
             // UserMenu
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(13, 53, 115);
             ClientSize = new Size(547, 537);
+            Controls.Add(ExitButton);
             Controls.Add(DisplayUserLoansButton);
             Controls.Add(CommentUserButton);
             Controls.Add(CommentPrompt6);
@@ -327,5 +341,6 @@
         private Label CommentPrompt6;
         private Button CommentUserButton;
         private Button DisplayUserLoansButton;
+        private Button ExitButton;
     }
 }
