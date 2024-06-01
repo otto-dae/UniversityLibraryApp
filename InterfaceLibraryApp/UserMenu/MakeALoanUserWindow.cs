@@ -63,6 +63,7 @@ namespace InterfaceLibraryApp
                 GlobalMatrices.loansMatrix[GlobalUserValues.userIndex, loanIndex + 1] = LoanFunctions.LoanDateGenerator();
                 BasicFileFunctions.WriteChanges(GlobalPaths.booksPath, GlobalMatrices.booksMatrix);
                 BasicFileFunctions.WriteChanges(GlobalPaths.loansPath, GlobalMatrices.loansMatrix);
+                MessageBox.Show("Préstamo realizado con éxito");
                 Close();
             }
         }

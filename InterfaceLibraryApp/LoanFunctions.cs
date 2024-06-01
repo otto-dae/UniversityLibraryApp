@@ -10,7 +10,6 @@ namespace InterfaceLibraryApp
     {
         public static int FindIDBook(string[,] desiredMatrix, string idBook, int userLoansPos)
         {
-            int x = desiredMatrix.GetLength(0);
             int y = desiredMatrix.GetLength(1);
             for (int j = 1; j < y; j++)
             {

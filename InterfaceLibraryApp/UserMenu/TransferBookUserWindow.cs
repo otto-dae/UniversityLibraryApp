@@ -39,10 +39,11 @@ namespace InterfaceLibraryApp
             {
 
                 bookIndexOwner = LoanFunctions.FindIDBook(GlobalMatrices.loansMatrix, bookId, GlobalUserValues.userIndex);
-                dateDifference = LoanFunctions.DateDiference(GlobalMatrices.loansMatrix[GlobalUserValues.userIndex, bookIndexOwner + 1]);
+                string dateLoan = GlobalMatrices.loansMatrix[GlobalUserValues.userIndex, bookIndexOwner + 1];
+                dateDifference = LoanFunctions.DateDiference(dateLoan);
 
                 targetUserIndex = MainMethods.FindID(GlobalMatrices.loansMatrix, targetUserId);
-                targetUserLoanPos = LoanFunctions.LoanChecker(targetUserIndex);
+                targetUserLoanPos = MainMethods.LoanFinder(targetUserIndex);
             }
 
            
@@ -64,7 +65,7 @@ namespace InterfaceLibraryApp
                 MessageBox.Show("El usuario al que deseas transferir el libro no existe");
                 Close();
             }
-            if(targetUserLoanPos != 0)
+            if(targetUserLoanPos == -1)
             {
                 counter++;
                 MessageBox.Show("El usuario al que deseas transferir el libro tiene el límite de préstamos alcanzado");
@@ -73,7 +74,10 @@ namespace InterfaceLibraryApp
             if (counter == 0)
             {
                 GlobalMatrices.loansMatrix[targetUserIndex, targetUserLoanPos] = bookId;
+                GlobalMatrices.loansMatrix[targetUserIndex, targetUserLoanPos + 1] = LoanFunctions.LoanDateGenerator();
                 GlobalMatrices.loansMatrix[GlobalUserValues.userIndex, bookIndexOwner] = "ID";
+                GlobalMatrices.loansMatrix[GlobalUserValues.userIndex, bookIndexOwner + 1] = "date";
+                BasicFileFunctions.WriteChanges(GlobalPaths.loansPath, GlobalMatrices.loansMatrix);
                 MessageBox.Show("Libro transferido con éxito");
                 Close();
             }
