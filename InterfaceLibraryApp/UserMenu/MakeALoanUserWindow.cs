@@ -57,13 +57,13 @@ namespace InterfaceLibraryApp
             }
             if(counter == 0)
             {
-                int loanIndex = LoanFunctions.LoanChecker();
+                int loanIndex = LoanFunctions.LoanChecker(GlobalUserValues.userIndex);
                 GlobalMatrices.booksMatrix[bookIndex, 1] = Convert.ToString(Convert.ToInt32(GlobalMatrices.booksMatrix[bookIndex, 1]) - 1);
                 GlobalMatrices.loansMatrix[GlobalUserValues.userIndex, loanIndex] = InsertIdBookLoanUser.Text;
                 GlobalMatrices.loansMatrix[GlobalUserValues.userIndex, loanIndex + 1] = LoanFunctions.LoanDateGenerator();
                 BasicFileFunctions.WriteChanges(GlobalPaths.booksPath, GlobalMatrices.booksMatrix);
                 BasicFileFunctions.WriteChanges(GlobalPaths.loansPath, GlobalMatrices.loansMatrix);
-                MessageBox.Show("Libro prestado con éxito");
+                Close();
             }
         }
     }

@@ -63,11 +63,11 @@ namespace InterfaceLibraryApp
             }
             return Matrix;
         }
-        public static int LoanFinder()
+        public static int LoanFinder(int userIndex)
         {
             for(int i = 1; i < GlobalMatrices.loansMatrix.GetLength(1); i += 2)
             {
-                if (GlobalMatrices.loansMatrix[GlobalUserValues.userIndex, i] != "ID")
+                if (GlobalMatrices.loansMatrix[userIndex, i] != "ID")
                 {
                     return i;
                 }

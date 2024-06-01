@@ -50,7 +50,7 @@ namespace InterfaceLibraryApp
             {
                 return 0;
             }
-            if (MainMethods.LoanFinder() != -1)
+            if (MainMethods.LoanFinder(GlobalUserValues.userIndex) != -1)
             {
                 return -1;
             }

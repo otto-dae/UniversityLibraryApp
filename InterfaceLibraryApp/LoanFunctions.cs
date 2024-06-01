@@ -41,16 +41,16 @@ namespace InterfaceLibraryApp
             int difDays = dif.Days;
             return difDays;
         }
-        public static int LoanChecker()
+        public static int LoanChecker(int userIndex)
         {
             for (int i = 1; i < GlobalMatrices.loansMatrix.GetLength(1); i++)
             {
-                if (GlobalMatrices.loansMatrix[GlobalUserValues.userIndex, i] == "ID")
+                if (GlobalMatrices.loansMatrix[userIndex, i] == "ID")
                 {
                     return i;
                 }
             }
-            return -1;
+            return 0;
         }
     }
 }
