@@ -47,6 +47,13 @@ namespace InterfaceLibraryApp
 
         private void MakeaLoanButton_Click(object sender, EventArgs e)
         {
+            MakeALoanUserWindow makeALoanUserWindow = new MakeALoanUserWindow();
+            makeALoanUserWindow.Show();
+        }
+
+        private void TransferBookUserButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

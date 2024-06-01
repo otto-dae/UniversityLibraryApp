@@ -68,7 +68,7 @@
             WelcomeDisplay.Location = new Point(12, 316);
             WelcomeDisplay.Margin = new Padding(4, 0, 4, 0);
             WelcomeDisplay.Name = "WelcomeDisplay";
-            WelcomeDisplay.Size = new Size(53, 25);
+            WelcomeDisplay.Size = new Size(45, 20);
             WelcomeDisplay.TabIndex = 1;
             WelcomeDisplay.Text = "Label";
             // 
@@ -79,7 +79,7 @@
             DownPrompt.ForeColor = SystemColors.ActiveCaption;
             DownPrompt.Location = new Point(12, 341);
             DownPrompt.Name = "DownPrompt";
-            DownPrompt.Size = new Size(178, 23);
+            DownPrompt.Size = new Size(143, 19);
             DownPrompt.TabIndex = 2;
             DownPrompt.Text = "Deseas darse de baja?";
             // 
@@ -102,7 +102,7 @@
             SearchByPrompt.AutoSize = true;
             SearchByPrompt.Location = new Point(294, 11);
             SearchByPrompt.Name = "SearchByPrompt";
-            SearchByPrompt.Size = new Size(167, 28);
+            SearchByPrompt.Size = new Size(134, 21);
             SearchByPrompt.TabIndex = 4;
             SearchByPrompt.Text = "Buscar libros por :";
             // 
@@ -148,7 +148,7 @@
             LoansPrompt.AutoSize = true;
             LoansPrompt.Location = new Point(294, 172);
             LoansPrompt.Name = "LoansPrompt";
-            LoansPrompt.Size = new Size(111, 28);
+            LoansPrompt.Size = new Size(90, 21);
             LoansPrompt.TabIndex = 8;
             LoansPrompt.Text = "Prestamos :";
             // 
@@ -174,6 +174,7 @@
             TransferBookUserButton.TabIndex = 10;
             TransferBookUserButton.Text = "Transferir libro ";
             TransferBookUserButton.UseVisualStyleBackColor = true;
+            TransferBookUserButton.Click += TransferBookUserButton_Click;
             // 
             // ReturnBookUserButton
             // 
@@ -192,7 +193,7 @@
             CommentPrompt1.Font = new Font("Segoe UI", 10F);
             CommentPrompt1.Location = new Point(302, 354);
             CommentPrompt1.Name = "CommentPrompt1";
-            CommentPrompt1.Size = new Size(168, 23);
+            CommentPrompt1.Size = new Size(135, 19);
             CommentPrompt1.TabIndex = 12;
             CommentPrompt1.Text = "No tenemos un libro";
             // 
@@ -202,7 +203,7 @@
             CommentPrompt2.Font = new Font("Segoe UI", 10F);
             CommentPrompt2.Location = new Point(302, 377);
             CommentPrompt2.Name = "CommentPrompt2";
-            CommentPrompt2.Size = new Size(114, 23);
+            CommentPrompt2.Size = new Size(92, 19);
             CommentPrompt2.TabIndex = 13;
             CommentPrompt2.Text = "que buscabas";
             // 
@@ -212,7 +213,7 @@
             CommentPrompt3.Font = new Font("Segoe UI", 10F);
             CommentPrompt3.Location = new Point(302, 402);
             CommentPrompt3.Name = "CommentPrompt3";
-            CommentPrompt3.Size = new Size(159, 23);
+            CommentPrompt3.Size = new Size(127, 19);
             CommentPrompt3.TabIndex = 14;
             CommentPrompt3.Text = "deja un comentario";
             // 
@@ -222,7 +223,7 @@
             CommentPrompt4.Font = new Font("Segoe UI", 10F);
             CommentPrompt4.Location = new Point(302, 425);
             CommentPrompt4.Name = "CommentPrompt4";
-            CommentPrompt4.Size = new Size(138, 23);
+            CommentPrompt4.Size = new Size(112, 19);
             CommentPrompt4.TabIndex = 15;
             CommentPrompt4.Text = "con su nombre y";
             // 
@@ -232,7 +233,7 @@
             CommentPrompt5.Font = new Font("Segoe UI", 10F);
             CommentPrompt5.Location = new Point(302, 448);
             CommentPrompt5.Name = "CommentPrompt5";
-            CommentPrompt5.Size = new Size(184, 23);
+            CommentPrompt5.Size = new Size(149, 19);
             CommentPrompt5.TabIndex = 16;
             CommentPrompt5.Text = "veremos que podemos";
             // 
@@ -242,7 +243,7 @@
             CommentPrompt6.Font = new Font("Segoe UI", 10F);
             CommentPrompt6.Location = new Point(302, 471);
             CommentPrompt6.Name = "CommentPrompt6";
-            CommentPrompt6.Size = new Size(52, 23);
+            CommentPrompt6.Size = new Size(42, 19);
             CommentPrompt6.TabIndex = 17;
             CommentPrompt6.Text = "hacer";
             // 
@@ -270,7 +271,7 @@
             // 
             // UserMenu
             // 
-            AutoScaleDimensions = new SizeF(11F, 28F);
+            AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(13, 53, 115);
             ClientSize = new Size(547, 537);

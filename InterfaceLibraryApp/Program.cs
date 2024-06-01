@@ -12,7 +12,6 @@ namespace InterfaceLibraryApp
         [STAThread]
         static void Main()
         {
-
             BasicFileFunctions.CreateFile(GlobalPaths.usersPath);
             BasicFileFunctions.CreateFile(GlobalPaths.booksPath);
             BasicFileFunctions.CreateFile(GlobalPaths.loansPath);
@@ -27,6 +26,13 @@ namespace InterfaceLibraryApp
             GlobalMatrices.counterMatrix = MainMethods.CreateMatrix(GlobalPaths.counterPath);
             GlobalMatrices.commentsMatrix = MainMethods.CreateMatrix(GlobalPaths.commentsPath);
 
+            string useNumb = BasicFileFunctions.Reader(GlobalPaths.counterPath);
+            int useNumber = Convert.ToInt32(useNumb);
+            useNumber++;
+
+            StreamWriter counter = File.CreateText(GlobalPaths.counterPath);
+            counter.Write(useNumber);
+            counter.Close();
 
             ApplicationConfiguration.Initialize();
             Application.Run(new Login());
