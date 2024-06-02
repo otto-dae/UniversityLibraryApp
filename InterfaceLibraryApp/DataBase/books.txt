@@ -1,0 +1,29 @@
+000001|18|Harry Potter y la Piedra Filosofa|Fantasia,Magia,Comedia,Aventura,Drama|1
+000002|18|Harry Potter y la Camara de los Secretos|Fantasia,Magia,Comedia,Aventura,Drama|1
+000003|14|Harry Potter y el Prisionero de Azkaban|Magia,Comedia,Aventura,Drama|1
+000004|23|Harry Potter y el Caliz de Fuego|Fantasia,Magia,Comedia, Aventura,Drama|1
+000005|29|Harry Potter y la Orden del Fenix|Fantasia,Comedia,Aventura,Drama|1
+000006|27|Harry Potter y el Misterio del Principe|Fantasia,Magia,Comedia,Aventura,Drama|1
+000007|33|Harry Potter y las Reliquias de la Muerte|Fantasia,Magia,Comedia,Aventura,Drama|1
+000008|0|Jurassic Park|Accion,Aventura,Fantasia,Ciencia Ficcion,Suspenso|1
+000009|11|Guerra mundial Z|Ciencia Ficcion,Apocaliptica,Satira,Novela,Fantasia|1
+000010|11|El maravilloso mago de Oz|Infantil,Fantasia|1
+000011|10|La quinta ola|Accion,Suspenso,Ciencia Ficcion,Aventura,Drama|1
+000012|8|El Principito|Fabula,Novela Corta,Infantil,Ficcion Especulativa|1
+000013|11|Cien años de soledad|novela,alta Fantasia,Ficcion,Familiar|1
+000014|12|El señor de los anillos|Alta Fantasia, Ficcion, Aventura, Fantasia Heorica|1
+000015|11|El Hobbit|Novela,Epico,Alta Fantasia,Aventura,Ficcion|1
+000016|99999999|Don Quijote de la Mancha|Novela psicologica,Satira,Aventura,Fantasia|1
+000017|77|La vuelta al mundo en 80 dias|Ciencia Ficcion,Aventura,Viajes|1
+000018|17|Viaje al centro de la Tierra|Novela,Ciencia ficcion,cientifica|1
+000019|34|La Odisea|epopeya,Epico|1
+000020|21|Los Juegos del Hambre|Accion,ciencia Ficcion,Aventura,Thriller,Drama|1
+000021|34|Correr o Morrir|Novela,Ciencia Ficcion,Apocaliptica,distopica,aventura|1
+000022|21|Divergente|Ciencia Ficcion,Novela,Distopica|1
+000023|56|Rubi|Novela,Fantasia,Ciencia Ficcion,Viajes en el tiempo|1
+000024|12|El amor en los tiempos de colera|Novela,realismo magico,Novela rosa|1
+000025|23|El enigma de la habitacion 622|Thriller,Misterio,Ficcion|1
+000026|12|La desaparicion de Stephanie Mailer|Thriller,Ficcion,Misterio|1
+000027|54|Rayuela|Novela,Ficcion|1
+000028|25|Besar a un angel|Novela rosa,Ficcion,Romance Contemporaneo|1
+000029|23|El caballero de la armadura oxidada|Ficcion,Aventura,Dantastica|1

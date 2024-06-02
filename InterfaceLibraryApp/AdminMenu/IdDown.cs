@@ -19,12 +19,18 @@ namespace InterfaceLibraryApp
 
         private void AcceptIdDownButton_Click(object sender, EventArgs e)
         {
+            if (IdDownTextBox.Text.Length != 6)
+            {
+                MessageBox.Show("Ingrese un ID válido");
+                return;
+            }
             string userId = IdDownTextBox.Text;
             int caseUserId = IdDownAdmin(userId);
             if (caseUserId == 0)
             {
                 MessageBox.Show("Campo vacío");
-            }
+                return;
+            }    
             if (caseUserId == -1)
             {
                 MessageBox.Show("Usuario no encontrado");

@@ -19,11 +19,22 @@ namespace InterfaceLibraryApp
 
         private void AcceptButton_Click(object sender, EventArgs e)
         {
+            if(IdUPTextBox.Text == "")
+            {
+                MessageBox.Show("Campo vacío");
+                return;
+            }
+            if (IdUPTextBox.Text.Length != 6)
+            {
+                MessageBox.Show("Ingrese un ID válido");
+                return;
+            }
             string idUser = IdUPTextBox.Text;
             int caseUserId = IdUPAmind(idUser);
             if (caseUserId == 0)
             {
                 MessageBox.Show("Campo vacío");
+                return;
             }
             if (caseUserId == -1)
             {

@@ -17,6 +17,16 @@ namespace InterfaceLibraryApp
             GlobalUserValues.password = textBox2.Text;
             GlobalMatrices.usersMatrix = MainMethods.CreateMatrix(GlobalPaths.usersPath);
             GlobalUserValues.userIndex = MainMethods.FindID(GlobalMatrices.usersMatrix, GlobalUserValues.ID);
+            if(textBox1.Text == "" || textBox2.Text == "")
+            {
+                MessageBox.Show("Favor de llenar todos los campos");
+                return;
+            }
+            if(textBox1.Text.Length != 6)
+            {
+                MessageBox.Show("Usuario o contraseña incorrectos");
+                return;
+            }
             LogIn();
         }
         private void LogIn()

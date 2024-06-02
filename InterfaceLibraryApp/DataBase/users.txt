@@ -1,0 +1,5 @@
+000001|Lechuga123|Jesus Emanuel Diaz Rodriguez|User|1
+000002|Proyecto1|Otto De Acha Estrada|Admin|1
+000003|Rafa123|Rafael Duarte|Admin|1
+000004|Juan123|Juan P. Bautista Guerrero|User|1
+000005|Marino123|Diego Alonso Gonzalez Lopez|User|1

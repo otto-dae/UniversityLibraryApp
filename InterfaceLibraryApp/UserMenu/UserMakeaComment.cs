@@ -27,9 +27,10 @@ namespace InterfaceLibraryApp
             }
             else
             {
-                string newComment = GlobalUserValues.ID + "|" + CommentBox.Text;
+                string newComment = GlobalUserValues.ID + "|" + CommentBox.Text.Trim();
                 StreamWriter addComment = File.AppendText(GlobalPaths.commentsPath);
-                addComment.WriteLine(newComment);
+                addComment.WriteLine();
+                addComment.Write(newComment);
                 addComment.Close();
                 MessageBox.Show("Comentario agregado");
                 Close();

@@ -60,7 +60,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 10F);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(12, 111);
+            label2.Location = new Point(12, 106);
             label2.Name = "label2";
             label2.Size = new Size(256, 19);
             label2.TabIndex = 2;
@@ -68,7 +68,7 @@
             // 
             // NewBookQuantity
             // 
-            NewBookQuantity.Location = new Point(12, 133);
+            NewBookQuantity.Location = new Point(12, 128);
             NewBookQuantity.Name = "NewBookQuantity";
             NewBookQuantity.Size = new Size(87, 23);
             NewBookQuantity.TabIndex = 3;
@@ -77,7 +77,7 @@
             // 
             AcceptChangesButton.BackColor = Color.FromArgb(95, 145, 222);
             AcceptChangesButton.FlatStyle = FlatStyle.Popup;
-            AcceptChangesButton.Location = new Point(123, 170);
+            AcceptChangesButton.Location = new Point(152, 165);
             AcceptChangesButton.Name = "AcceptChangesButton";
             AcceptChangesButton.Size = new Size(59, 23);
             AcceptChangesButton.TabIndex = 4;
@@ -104,7 +104,7 @@
             SearchIdBook.Name = "SearchIdBook";
             SearchIdBook.Size = new Size(75, 23);
             SearchIdBook.TabIndex = 6;
-            SearchIdBook.Text = "button1";
+            SearchIdBook.Text = "Buscar";
             SearchIdBook.UseVisualStyleBackColor = false;
             SearchIdBook.Click += SearchIdBook_Click;
             // 
@@ -113,7 +113,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(13, 53, 115);
-            ClientSize = new Size(364, 212);
+            ClientSize = new Size(488, 201);
             Controls.Add(SearchIdBook);
             Controls.Add(NameBookTextBox);
             Controls.Add(AcceptChangesButton);

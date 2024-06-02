@@ -19,12 +19,19 @@ namespace InterfaceLibraryApp
             label2.Hide();
             NewBookQuantity.Hide();
             AcceptChangesButton.Hide();
+            NameBookTextBox.Hide();
         }
         private void SearchIdBook_Click(object sender, EventArgs e)
         {
             if (SearchBookId.Text == "")
             {
                 MessageBox.Show("Por favor, llena el campo de busqueda");
+                return;
+            }
+            if(SearchBookId.Text.Length != 6)
+            {
+                MessageBox.Show("El ID del libro debe ser de 6 digitos");
+                SearchBookId.Clear();
                 return;
             }
             Bookindex = MainMethods.FindID(GlobalMatrices.booksMatrix, SearchBookId.Text);
@@ -36,7 +43,9 @@ namespace InterfaceLibraryApp
             }
             else
             {
+                NameBookTextBox.Text = "Nombre del libro: " + GlobalMatrices.booksMatrix[Bookindex, 2];
                 label2.Show();
+                NameBookTextBox.Show();
                 NewBookQuantity.Show();
                 AcceptChangesButton.Show();
             }
@@ -69,10 +78,6 @@ namespace InterfaceLibraryApp
                 MessageBox.Show("Cantidad de libros modificada correctamente");
                 Close();
             }
-
-
         }
-
-
     }
 }

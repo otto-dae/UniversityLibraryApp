@@ -29,6 +29,11 @@ namespace InterfaceLibraryApp
                 MessageBox.Show("Por favor, ingrese un ID");
                 return;
             }
+            if (SearchIdTextBox.Text.Length != 6)
+            {
+                MessageBox.Show("Ingrese un ID válido");
+                return;
+            }
             if (userIdIndex == -1)
             {
                 MessageBox.Show("El ID no existe");

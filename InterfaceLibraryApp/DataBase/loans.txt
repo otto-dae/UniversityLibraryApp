@@ -1,0 +1,5 @@
+000001|ID|date|ID|date|ID|date|ID|date
+000002|ID|date|ID|date|ID|date|ID|date
+000003|ID|date|ID|date|ID|date|ID|date
+000004|ID|date|ID|date|ID|date|ID|date
+000005|ID|date|ID|date|ID|date|ID|date

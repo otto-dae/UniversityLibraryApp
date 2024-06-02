@@ -25,6 +25,11 @@ namespace InterfaceLibraryApp
                 MessageBox.Show("Por favor ingrese un ID");
                 return;
             }
+            if (IdSearchPrivilagesTextBox.Text.Length != 6)
+            {
+                MessageBox.Show("Ingrese un ID válido");
+                return;
+            }
             userIdIndex = MainMethods.FindID(GlobalMatrices.usersMatrix, IdSearchPrivilagesTextBox.Text);
             
             if (userIdIndex == -1)

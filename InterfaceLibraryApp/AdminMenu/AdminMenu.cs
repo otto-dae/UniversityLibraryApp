@@ -66,17 +66,19 @@ namespace InterfaceLibraryApp
         }
         private void ModifyNameBookAdminButton_Click(object sender, EventArgs e)
         {
-
+            ModifyNameBookWindow modifyNameBookWindow = new ModifyNameBookWindow();
+            modifyNameBookWindow.Show();
         }
         private void ChangeGenreButton_Click(object sender, EventArgs e)
         {
-
+            ModifyGenresBookWindow modifyGenreBookWindow = new ModifyGenresBookWindow();
+            modifyGenreBookWindow.Show();
         }
         private void ModifyQuantityBookAdminButton_Click(object sender, EventArgs e)
         {
-
+            ModifyQUantityBookWindow modifyQUantityBookWindow = new ModifyQUantityBookWindow();
+            modifyQUantityBookWindow.Show();
         }
-
         private void ShowUserMenuButton_Click(object sender, EventArgs e)
         {
             UserMenu userMenu = new UserMenu(MainlogIn);

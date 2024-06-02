@@ -25,6 +25,11 @@ namespace InterfaceLibraryApp
                 MessageBox.Show("Por favor, ingrese un ID");
                 return;
             }
+            if(SearchIdTextBox.Text.Length != 6)
+            {
+                MessageBox.Show("Ingrese un ID valido");
+                return;
+            }
             int idBookIndex = MainMethods.FindID(GlobalMatrices.booksMatrix, SearchIdTextBox.Text);
             if (idBookIndex == -1)
             {

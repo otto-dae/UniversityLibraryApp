@@ -99,12 +99,15 @@
             // 
             // SearchId
             // 
+            SearchId.BackColor = Color.FromArgb(95, 145, 222);
+            SearchId.BackgroundImageLayout = ImageLayout.None;
+            SearchId.FlatStyle = FlatStyle.Popup;
             SearchId.Location = new Point(413, 9);
             SearchId.Name = "SearchId";
             SearchId.Size = new Size(56, 23);
             SearchId.TabIndex = 6;
             SearchId.Text = "Buscar";
-            SearchId.UseVisualStyleBackColor = true;
+            SearchId.UseVisualStyleBackColor = false;
             SearchId.Click += SearchId_Click;
             // 
             // ChangeNameWindow
