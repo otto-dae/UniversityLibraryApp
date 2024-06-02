@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -50,6 +51,14 @@ namespace InterfaceLibraryApp
                 }
             }
             return 0;
+        }
+        public static void ReturnBook (int bookId, int bookIndex)
+        {
+            GlobalMatrices.booksMatrix[bookId, 1] = (Convert.ToInt32(GlobalMatrices.booksMatrix[bookId, 1]) + 1).ToString();
+            GlobalMatrices.loansMatrix[GlobalUserValues.userIndex, bookIndex] = "ID";
+            GlobalMatrices.loansMatrix[GlobalUserValues.userIndex, bookIndex + 1] = "date";
+            BasicFileFunctions.WriteChanges(GlobalPaths.loansPath, GlobalMatrices.loansMatrix);
+            BasicFileFunctions.WriteChanges(GlobalPaths.booksPath, GlobalMatrices.booksMatrix);
         }
     }
 }

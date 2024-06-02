@@ -62,5 +62,11 @@ namespace InterfaceLibraryApp
         {
             MainlogIn.Close();
         }
+
+        private void ReturnBookUserButton_Click(object sender, EventArgs e)
+        {
+            ReturnBookUserWindows returnBookUserWindows = new ReturnBookUserWindows();
+            returnBookUserWindows.Show();
+        }
     }
 }

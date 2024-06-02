@@ -86,12 +86,13 @@
             // 
             // UserDownButton
             // 
-            UserDownButton.BackColor = Color.FromArgb(128, 128, 255);
+            UserDownButton.BackColor = Color.FromArgb(196, 121, 51);
+            UserDownButton.FlatStyle = FlatStyle.Popup;
             UserDownButton.Font = new Font("Segoe UI", 10F);
             UserDownButton.ForeColor = Color.Black;
-            UserDownButton.Location = new Point(12, 367);
+            UserDownButton.Location = new Point(12, 368);
             UserDownButton.Name = "UserDownButton";
-            UserDownButton.Size = new Size(53, 33);
+            UserDownButton.Size = new Size(53, 28);
             UserDownButton.TabIndex = 3;
             UserDownButton.Text = "Baja";
             UserDownButton.TextAlign = ContentAlignment.TopCenter;
@@ -109,6 +110,8 @@
             // 
             // SearchByIdButton
             // 
+            SearchByIdButton.BackColor = Color.FromArgb(95, 145, 222);
+            SearchByIdButton.FlatStyle = FlatStyle.Popup;
             SearchByIdButton.Font = new Font("Segoe UI", 9F);
             SearchByIdButton.ForeColor = Color.Black;
             SearchByIdButton.Location = new Point(302, 42);
@@ -116,11 +119,13 @@
             SearchByIdButton.Size = new Size(47, 29);
             SearchByIdButton.TabIndex = 5;
             SearchByIdButton.Text = "ID";
-            SearchByIdButton.UseVisualStyleBackColor = true;
+            SearchByIdButton.UseVisualStyleBackColor = false;
             SearchByIdButton.Click += SearchByIdButton_Click;
             // 
             // SearchByNameButton
             // 
+            SearchByNameButton.BackColor = Color.FromArgb(95, 145, 222);
+            SearchByNameButton.FlatStyle = FlatStyle.Popup;
             SearchByNameButton.Font = new Font("Segoe UI", 8F);
             SearchByNameButton.ForeColor = Color.Black;
             SearchByNameButton.ImageAlign = ContentAlignment.TopCenter;
@@ -129,11 +134,13 @@
             SearchByNameButton.Size = new Size(74, 30);
             SearchByNameButton.TabIndex = 6;
             SearchByNameButton.Text = "Nombre";
-            SearchByNameButton.UseVisualStyleBackColor = true;
+            SearchByNameButton.UseVisualStyleBackColor = false;
             SearchByNameButton.Click += SearchByNameButton_Click;
             // 
             // SearchByGenreButton
             // 
+            SearchByGenreButton.BackColor = Color.FromArgb(95, 145, 222);
+            SearchByGenreButton.FlatStyle = FlatStyle.Popup;
             SearchByGenreButton.Font = new Font("Segoe UI", 9F);
             SearchByGenreButton.ForeColor = Color.Black;
             SearchByGenreButton.Location = new Point(302, 113);
@@ -141,7 +148,7 @@
             SearchByGenreButton.Size = new Size(84, 30);
             SearchByGenreButton.TabIndex = 7;
             SearchByGenreButton.Text = "Generos";
-            SearchByGenreButton.UseVisualStyleBackColor = true;
+            SearchByGenreButton.UseVisualStyleBackColor = false;
             SearchByGenreButton.Click += SearchByGenreButton_Click;
             // 
             // LoansPrompt
@@ -155,6 +162,8 @@
             // 
             // MakeaLoanButton
             // 
+            MakeaLoanButton.BackColor = Color.FromArgb(95, 145, 222);
+            MakeaLoanButton.FlatStyle = FlatStyle.Popup;
             MakeaLoanButton.Font = new Font("Segoe UI", 9F);
             MakeaLoanButton.ForeColor = Color.Black;
             MakeaLoanButton.Location = new Point(302, 203);
@@ -162,11 +171,13 @@
             MakeaLoanButton.Size = new Size(138, 29);
             MakeaLoanButton.TabIndex = 9;
             MakeaLoanButton.Text = "Realizar Prestamo";
-            MakeaLoanButton.UseVisualStyleBackColor = true;
+            MakeaLoanButton.UseVisualStyleBackColor = false;
             MakeaLoanButton.Click += MakeaLoanButton_Click;
             // 
             // TransferBookUserButton
             // 
+            TransferBookUserButton.BackColor = Color.FromArgb(95, 145, 222);
+            TransferBookUserButton.FlatStyle = FlatStyle.Popup;
             TransferBookUserButton.Font = new Font("Segoe UI", 9F);
             TransferBookUserButton.ForeColor = Color.Black;
             TransferBookUserButton.Location = new Point(302, 238);
@@ -174,11 +185,13 @@
             TransferBookUserButton.Size = new Size(138, 29);
             TransferBookUserButton.TabIndex = 10;
             TransferBookUserButton.Text = "Transferir libro ";
-            TransferBookUserButton.UseVisualStyleBackColor = true;
+            TransferBookUserButton.UseVisualStyleBackColor = false;
             TransferBookUserButton.Click += TransferBookUserButton_Click;
             // 
             // ReturnBookUserButton
             // 
+            ReturnBookUserButton.BackColor = Color.FromArgb(95, 145, 222);
+            ReturnBookUserButton.FlatStyle = FlatStyle.Popup;
             ReturnBookUserButton.Font = new Font("Segoe UI", 9F);
             ReturnBookUserButton.ForeColor = Color.Black;
             ReturnBookUserButton.Location = new Point(302, 273);
@@ -186,7 +199,8 @@
             ReturnBookUserButton.Size = new Size(138, 29);
             ReturnBookUserButton.TabIndex = 11;
             ReturnBookUserButton.Text = "Devolver libro";
-            ReturnBookUserButton.UseVisualStyleBackColor = true;
+            ReturnBookUserButton.UseVisualStyleBackColor = false;
+            ReturnBookUserButton.Click += ReturnBookUserButton_Click;
             // 
             // CommentPrompt1
             // 
@@ -250,17 +264,21 @@
             // 
             // CommentUserButton
             // 
+            CommentUserButton.BackColor = Color.FromArgb(95, 145, 222);
+            CommentUserButton.FlatStyle = FlatStyle.Popup;
             CommentUserButton.Font = new Font("Segoe UI", 9F);
             CommentUserButton.ForeColor = Color.Black;
-            CommentUserButton.Location = new Point(302, 497);
+            CommentUserButton.Location = new Point(302, 499);
             CommentUserButton.Name = "CommentUserButton";
-            CommentUserButton.Size = new Size(82, 34);
+            CommentUserButton.Size = new Size(82, 33);
             CommentUserButton.TabIndex = 18;
             CommentUserButton.Text = "Comentar";
-            CommentUserButton.UseVisualStyleBackColor = true;
+            CommentUserButton.UseVisualStyleBackColor = false;
             // 
             // DisplayUserLoansButton
             // 
+            DisplayUserLoansButton.BackColor = Color.FromArgb(95, 145, 222);
+            DisplayUserLoansButton.FlatStyle = FlatStyle.Popup;
             DisplayUserLoansButton.Font = new Font("Segoe UI", 9F);
             DisplayUserLoansButton.ForeColor = Color.Black;
             DisplayUserLoansButton.Location = new Point(302, 308);
@@ -268,11 +286,12 @@
             DisplayUserLoansButton.Size = new Size(159, 29);
             DisplayUserLoansButton.TabIndex = 19;
             DisplayUserLoansButton.Text = "Consultar prestamos";
-            DisplayUserLoansButton.UseVisualStyleBackColor = true;
+            DisplayUserLoansButton.UseVisualStyleBackColor = false;
             // 
             // ExitButton
             // 
-            ExitButton.BackColor = Color.FromArgb(192, 0, 0);
+            ExitButton.BackColor = Color.FromArgb(212, 38, 48);
+            ExitButton.FlatStyle = FlatStyle.Popup;
             ExitButton.ForeColor = Color.Black;
             ExitButton.Location = new Point(460, 497);
             ExitButton.Name = "ExitButton";
