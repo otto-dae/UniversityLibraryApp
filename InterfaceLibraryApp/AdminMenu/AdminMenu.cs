@@ -85,5 +85,20 @@ namespace InterfaceLibraryApp
             userMenu.Show();
             Close();
         }
+        private void ReadCommentsAdminButton_Click(object sender, EventArgs e)
+        {
+            ReadCommentsWindow readCommentsWindow = new ReadCommentsWindow();
+            readCommentsWindow.Show();
+        }
+        private void ReadLoansAdminButton_Click(object sender, EventArgs e)
+        {
+            ReadLoansUsers readLoansUser = new ReadLoansUsers();
+            readLoansUser.Show();
+        }
+
+        private void ReadBitacora_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

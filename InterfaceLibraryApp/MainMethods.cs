@@ -86,5 +86,14 @@ namespace InterfaceLibraryApp
                 return -1;
             }
         }
+        public static void AddtoBitacora (string action)
+        {
+            StreamWriter bitacora = File.AppendText(GlobalPaths.bitacoraPath);
+            string date = LoanFunctions.DateGen().ToString();
+            string newAction = date + "|" + action;
+            bitacora.WriteLine();
+            bitacora.Write(newAction);
+            bitacora.Close();
+        }
     }
 }

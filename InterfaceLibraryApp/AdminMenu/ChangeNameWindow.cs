@@ -64,7 +64,7 @@ namespace InterfaceLibraryApp
             }
             else
             {
-                GlobalMatrices.usersMatrix[userIdIndex, 2] = NewNameTextBox.Text;
+                GlobalMatrices.usersMatrix[userIdIndex, 2] = NewNameTextBox.Text.Replace('|', '*');
                 BasicFileFunctions.WriteChanges(GlobalPaths.usersPath, GlobalMatrices.usersMatrix);
                 MessageBox.Show("Nombre cambiado exitosamente");
                 Close();

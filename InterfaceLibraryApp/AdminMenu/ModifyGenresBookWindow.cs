@@ -71,7 +71,7 @@ namespace InterfaceLibraryApp
             }
             else
             {
-                GlobalMatrices.booksMatrix[bookIndex, 3] = NewGenresTextBox.Text;
+                GlobalMatrices.booksMatrix[bookIndex, 3] = NewGenresTextBox.Text.Replace('|', '*');
                 BasicFileFunctions.WriteChanges(GlobalPaths.booksPath, GlobalMatrices.booksMatrix);
                 MessageBox.Show("Generos modificados correctamente");
                 Close();

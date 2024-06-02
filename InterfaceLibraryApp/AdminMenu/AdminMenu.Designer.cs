@@ -46,6 +46,7 @@
             ExitButton = new Button();
             ChangeGenreButton = new Button();
             ShowUserMenuButton = new Button();
+            ReadBitacora = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -207,6 +208,7 @@
             ReadCommentsAdminButton.TabIndex = 13;
             ReadCommentsAdminButton.Text = "Leer comentarios";
             ReadCommentsAdminButton.UseVisualStyleBackColor = false;
+            ReadCommentsAdminButton.Click += ReadCommentsAdminButton_Click;
             // 
             // ReadLoansAdminButton
             // 
@@ -219,6 +221,7 @@
             ReadLoansAdminButton.TabIndex = 14;
             ReadLoansAdminButton.Text = "Leer prestamo de usuario";
             ReadLoansAdminButton.UseVisualStyleBackColor = false;
+            ReadLoansAdminButton.Click += ReadLoansAdminButton_Click;
             // 
             // ReUpbookButton
             // 
@@ -268,12 +271,25 @@
             ShowUserMenuButton.UseVisualStyleBackColor = false;
             ShowUserMenuButton.Click += ShowUserMenuButton_Click;
             // 
+            // ReadBitacora
+            // 
+            ReadBitacora.BackColor = Color.FromArgb(95, 145, 222);
+            ReadBitacora.FlatStyle = FlatStyle.Popup;
+            ReadBitacora.Location = new Point(12, 327);
+            ReadBitacora.Name = "ReadBitacora";
+            ReadBitacora.Size = new Size(84, 22);
+            ReadBitacora.TabIndex = 19;
+            ReadBitacora.Text = "Leer Bitacora";
+            ReadBitacora.UseVisualStyleBackColor = false;
+            ReadBitacora.Click += ReadBitacora_Click;
+            // 
             // AdminMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(13, 53, 115);
-            ClientSize = new Size(441, 338);
+            ClientSize = new Size(441, 361);
+            Controls.Add(ReadBitacora);
             Controls.Add(ShowUserMenuButton);
             Controls.Add(ChangeGenreButton);
             Controls.Add(ExitButton);
@@ -320,5 +336,6 @@
         private Button ExitButton;
         private Button ChangeGenreButton;
         private Button ShowUserMenuButton;
+        private Button ReadBitacora;
     }
 }

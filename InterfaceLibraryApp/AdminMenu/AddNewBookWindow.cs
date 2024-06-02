@@ -35,7 +35,7 @@ namespace InterfaceLibraryApp
             else
             {
                 string idBook = MainMethods.CreateId(GlobalMatrices.booksMatrix);
-                string newBook = idBook + '|' + AmountAvailableBook.Text + '|' + NewBookNameTextBox.Text.Trim() + '|' + NewBookGenresTextBox.Text.Trim() + '|' + '1';
+                string newBook = idBook + '|' + AmountAvailableBook.Text.Replace('|', '*') + '|' + NewBookNameTextBox.Text.Trim().Replace('|', '*') + '|' + NewBookGenresTextBox.Text.Trim().Replace('|', '*') + '|' + '1';
                 StreamWriter addNewBook = File.AppendText(GlobalPaths.booksPath);
                 addNewBook.WriteLine();
                 addNewBook.Write(newBook);

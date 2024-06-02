@@ -27,7 +27,9 @@ namespace InterfaceLibraryApp
             }
             else
             {
-                string newComment = GlobalUserValues.ID + "|" + CommentBox.Text.Trim();
+                string commentID = MainMethods.CreateId(GlobalMatrices.commentsMatrix);
+                string userName = GlobalMatrices.usersMatrix[GlobalUserValues.userIndex, 2].Trim();
+                string newComment = commentID + "|" + userName + '|' + CommentBox.Text.Trim().Replace('|', '*');
                 StreamWriter addComment = File.AppendText(GlobalPaths.commentsPath);
                 addComment.WriteLine();
                 addComment.Write(newComment);

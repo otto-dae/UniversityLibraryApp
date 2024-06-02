@@ -25,8 +25,8 @@ namespace InterfaceLibraryApp
         private void RegisterButtonAccept_Click(object sender, EventArgs e)
         {
             string newId = MainMethods.CreateId(GlobalMatrices.usersMatrix);
-            string fullName = FullNameBox.Text;
-            string password = PasswordBox.Text;
+            string fullName = FullNameBox.Text.Replace('|', '*');
+            string password = PasswordBox.Text.Replace('|', '*');
             string type = "User";
             string newUser = newId + '|' + password + '|' + fullName + '|' + type + '|' + '1';
             string newUserLoan = newId + '|' + "ID" + '|' + "date" + '|' + "ID" + '|' + "date" + '|' + "ID" + '|' + "date" + '|' + "ID" + '|' + "date";
