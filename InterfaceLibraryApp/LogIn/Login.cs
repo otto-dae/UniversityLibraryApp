@@ -21,7 +21,7 @@ namespace InterfaceLibraryApp
         }
         private void LogIn()
         {
-            while(GlobalUserValues.userIndex == -1 || GlobalMatrices.usersMatrix[GlobalUserValues.userIndex, 1] != GlobalUserValues.password)
+            while (GlobalUserValues.userIndex == -1 || GlobalMatrices.usersMatrix[GlobalUserValues.userIndex, 1] != GlobalUserValues.password)
             {
                 textBox1.Clear();
                 textBox2.Clear();
@@ -36,7 +36,7 @@ namespace InterfaceLibraryApp
             if (GlobalMatrices.usersMatrix[GlobalUserValues.userIndex, 3] == "Admin" && GlobalMatrices.usersMatrix[GlobalUserValues.userIndex, 1] == GlobalUserValues.password)
             {
                 this.Hide();
-                AdminMenu adminWindow = new AdminMenu();
+                AdminMenu adminWindow = new AdminMenu(this);
                 adminWindow.Show();
             }
             if (GlobalMatrices.usersMatrix[GlobalUserValues.userIndex, 3] == "User" && GlobalMatrices.usersMatrix[GlobalUserValues.userIndex, 1] == GlobalUserValues.password)
@@ -49,8 +49,12 @@ namespace InterfaceLibraryApp
         private void RegisterButton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            RegisterWindow registerWindow = new RegisterWindow();
+            RegisterWindow registerWindow = new RegisterWindow(this);
             registerWindow.Show();
+        }
+        private void ExitButtonLogIn_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

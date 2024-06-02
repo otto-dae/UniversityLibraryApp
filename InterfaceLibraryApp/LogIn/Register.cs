@@ -13,11 +13,13 @@ namespace InterfaceLibraryApp
 {
     public partial class RegisterWindow : Form
     {
-        public RegisterWindow()
+        Form MainlogIn;
+        public RegisterWindow(Form mainlogIn)
         {
             InitializeComponent();
             pictureBox1.Image = Properties.Resources.LOGO_UAQ;
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            MainlogIn = mainlogIn;
         }
 
         private void RegisterButtonAccept_Click(object sender, EventArgs e)
@@ -42,8 +44,13 @@ namespace InterfaceLibraryApp
             MessageBox.Show($"Usuario registrado con éxito\n" +
                 $"tu id: {newId}");
             this.Close();
-            Login login = new Login();
-            login.Show();
+            MainlogIn.Show();
+        }
+
+        private void BackLogInButton_Click(object sender, EventArgs e)
+        {
+            MainlogIn.Show();
+            this.Close();
         }
     }
 }
