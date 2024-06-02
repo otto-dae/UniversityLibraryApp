@@ -29,13 +29,11 @@ namespace InterfaceLibraryApp
         {
             MainlogIn.Close();
         }
-
         private void UserRegisterAdminButton_Click(object sender, EventArgs e)
         {
             IdUp idUp = new IdUp();
             idUp.Show();
         }
-
         private void DeactivateUserAdminButton_Click(object sender, EventArgs e)
         {
 

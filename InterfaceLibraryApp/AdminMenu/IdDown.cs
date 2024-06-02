@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace InterfaceLibraryApp
 {
-    public partial class IdUp : Form
+    public partial class IdDown : Form
     {
-        public IdUp()
+        public IdDown()
         {
             InitializeComponent();
         }
 
-        private void AcceptButton_Click(object sender, EventArgs e)
+        private void AcceptIdDownButton_Click(object sender, EventArgs e)
         {
-            string idUser = IdUPTextBox.Text;
-            int caseUserId = IdUPAmind(idUser);
+            string userId = IdDownTextBox.Text;
+            int caseUserId = IdDownAdmin(userId);
             if (caseUserId == 0)
             {
                 MessageBox.Show("Campo vacío");
@@ -32,34 +32,33 @@ namespace InterfaceLibraryApp
             }
             if (caseUserId == -2)
             {
-                MessageBox.Show("Usuario ya estaba activado");
+                MessageBox.Show("Usuario ya estaba dado de baja");
                 Close();
             }
             if (caseUserId == 1)
             {
-                MessageBox.Show("Usuario activado exitosamente");
+                MessageBox.Show("Usuario dado de baja exitosamente");
                 Close();
             }
-
         }
-        private static int IdUPAmind (string idUser)
+        private static int IdDownAdmin (string userId)
         {
-            int userIdIndex = MainMethods.FindID(GlobalMatrices.usersMatrix, idUser);
-            if (idUser == "")
+            int userIdIndex = MainMethods.FindID(GlobalMatrices.usersMatrix, userId);
+            if (userId == "")
             {
                 return 0;
             }
             if (userIdIndex == -1)
-            {
+            {  
                 return -1;
             }
-            if (GlobalMatrices.usersMatrix[userIdIndex, 4] == "1")
+            if (GlobalMatrices.usersMatrix[userIdIndex, 4] == "0")
             {
                 return -2;
             }
             else
             {
-                GlobalMatrices.usersMatrix[userIdIndex, 4] = "1";
+                GlobalMatrices.usersMatrix[userIdIndex, 4] = "0";
                 BasicFileFunctions.WriteChanges(GlobalPaths.usersPath, GlobalMatrices.usersMatrix);
                 return 1;
             }
