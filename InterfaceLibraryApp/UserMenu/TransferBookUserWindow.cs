@@ -82,6 +82,7 @@ namespace InterfaceLibraryApp
                 GlobalMatrices.loansMatrix[GlobalUserValues.userIndex, bookIndexOwner + 1] = "date";
                 BasicFileFunctions.WriteChanges(GlobalPaths.loansPath, GlobalMatrices.loansMatrix);
                 MessageBox.Show("Libro transferido con éxito");
+                MainMethods.WriteToLogs($"Usuario {GlobalUserValues.ID} trasnferio a {targetUserId} el libro {bookId}");
                 Close();
             }
         }

@@ -35,6 +35,7 @@ namespace InterfaceLibraryApp
                 addComment.Write(newComment);
                 addComment.Close();
                 MessageBox.Show("Comentario agregado");
+                MainMethods.WriteToLogs($"Usuario {GlobalUserValues.ID} agrego un comentario");
                 Close();
             }
         }

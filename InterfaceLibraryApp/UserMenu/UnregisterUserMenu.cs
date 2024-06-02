@@ -32,6 +32,7 @@ namespace InterfaceLibraryApp
                 GlobalMatrices.usersMatrix[GlobalUserValues.userIndex, 4] = "0";
                 BasicFileFunctions.WriteChanges(GlobalPaths.usersPath, GlobalMatrices.usersMatrix);
                 MessageBox.Show("Usuario dado de baja exitosamente");
+                MainMethods.WriteToLogs($"Usuario {GlobalUserValues.ID} dado de baja exitosamente");
                 Application.Exit();
             }
             if(userDown == 0)

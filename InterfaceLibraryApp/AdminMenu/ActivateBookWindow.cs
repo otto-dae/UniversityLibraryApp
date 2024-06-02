@@ -51,6 +51,7 @@ namespace InterfaceLibraryApp
             GlobalMatrices.booksMatrix[idBookIndex, 4] = "1";
             BasicFileFunctions.WriteChanges(GlobalPaths.booksPath, GlobalMatrices.booksMatrix);
             MessageBox.Show("Libro desactivado");
+            MainMethods.WriteToLogs($"Se activó el libro con ID: {GlobalMatrices.booksMatrix[idBookIndex, 0]}");
             Close();
         }
     }    

@@ -59,6 +59,7 @@ namespace InterfaceLibraryApp
                 GlobalMatrices.usersMatrix[userIdIndex, 3] = "User";
                 BasicFileFunctions.WriteChanges(GlobalPaths.usersPath, GlobalMatrices.usersMatrix);
                 MessageBox.Show("Privilegios cambiados a Usuario");
+                MainMethods.WriteToLogs($"Se cambiaron los privilegios de {GlobalMatrices.usersMatrix[userIdIndex, 2]} a Usuario");
                 Close();
             }
             else
@@ -66,6 +67,7 @@ namespace InterfaceLibraryApp
                 GlobalMatrices.usersMatrix[userIdIndex, 3] = "Admin";
                 BasicFileFunctions.WriteChanges(GlobalPaths.usersPath, GlobalMatrices.usersMatrix);
                 MessageBox.Show("Privilegios cambiados a Admin");
+                MainMethods.WriteToLogs($"Se cambiaron los privilegios de {GlobalMatrices.usersMatrix[userIdIndex, 2]} a Admin");
                 Close();
             }
         }

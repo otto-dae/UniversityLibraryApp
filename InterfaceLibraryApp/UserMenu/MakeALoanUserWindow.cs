@@ -74,6 +74,7 @@ namespace InterfaceLibraryApp
                 GlobalMatrices.loansMatrix[GlobalUserValues.userIndex, loanIndex + 1] = LoanFunctions.LoanDateGenerator();
                 BasicFileFunctions.WriteChanges(GlobalPaths.booksPath, GlobalMatrices.booksMatrix);
                 BasicFileFunctions.WriteChanges(GlobalPaths.loansPath, GlobalMatrices.loansMatrix);
+                MainMethods.WriteToLogs($"El usuario {GlobalUserValues.userIndex} ha prestado el libro {GlobalMatrices.booksMatrix[bookIndex, 2]}");
                 MessageBox.Show("Préstamo realizado con éxito");
                 Close();
             }

@@ -71,6 +71,7 @@ namespace InterfaceLibraryApp
             else
             {
                 GlobalMatrices.usersMatrix[userIdIndex, 4] = "1";
+                MainMethods.WriteToLogs($"Se activó el usuario {GlobalMatrices.usersMatrix[userIdIndex, 0]}");
                 BasicFileFunctions.WriteChanges(GlobalPaths.usersPath, GlobalMatrices.usersMatrix);
                 return 1;
             }

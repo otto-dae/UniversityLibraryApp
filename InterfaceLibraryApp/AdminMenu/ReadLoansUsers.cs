@@ -24,6 +24,7 @@ namespace InterfaceLibraryApp
                 GlobalMatrices.loansMatrix[i, 5], GlobalMatrices.loansMatrix[i, 6],
                 GlobalMatrices.loansMatrix[i, 7], GlobalMatrices.loansMatrix[i, 8]);
             }
+            MainMethods.WriteToLogs("Se ha leido la informacion de los prestamos de los usuarios");
         }
     }
 }

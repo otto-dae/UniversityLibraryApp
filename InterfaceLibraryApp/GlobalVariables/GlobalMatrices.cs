@@ -11,7 +11,7 @@ namespace InterfaceLibraryApp
         public static string[,] usersMatrix;
         public static string[,] booksMatrix;
         public static string[,] loansMatrix;
-        public static string[,] bitacoraMatrix;
+        public static string[,] logsMatrix;
         public static string[,] counterMatrix;
         public static string[,] commentsMatrix;
     }

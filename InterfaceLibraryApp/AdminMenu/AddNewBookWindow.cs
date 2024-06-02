@@ -40,6 +40,7 @@ namespace InterfaceLibraryApp
                 addNewBook.WriteLine();
                 addNewBook.Write(newBook);
                 addNewBook.Close();
+                MainMethods.WriteToLogs($"Se añadió un nuevo libro: {newBook}");
                 MessageBox.Show("Libro añadido correctamente");
                 Close();
             }

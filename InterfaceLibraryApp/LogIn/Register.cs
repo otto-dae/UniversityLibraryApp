@@ -43,8 +43,10 @@ namespace InterfaceLibraryApp
 
             MessageBox.Show($"Usuario registrado con éxito\n" +
                 $"tu id: {newId}");
+            MainMethods.UserRegistered("Usuario registrado");
             this.Close();
             MainlogIn.Show();
+
         }
 
         private void BackLogInButton_Click(object sender, EventArgs e)

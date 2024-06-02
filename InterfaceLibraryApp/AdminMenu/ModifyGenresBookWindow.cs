@@ -73,6 +73,7 @@ namespace InterfaceLibraryApp
             {
                 GlobalMatrices.booksMatrix[bookIndex, 3] = NewGenresTextBox.Text.Replace('|', '*');
                 BasicFileFunctions.WriteChanges(GlobalPaths.booksPath, GlobalMatrices.booksMatrix);
+                MainMethods.WriteToLogs($"Se cambiaron los generos del libro con ID: {GlobalMatrices.booksMatrix[bookIndex, 0]}");
                 MessageBox.Show("Generos modificados correctamente");
                 Close();
             }

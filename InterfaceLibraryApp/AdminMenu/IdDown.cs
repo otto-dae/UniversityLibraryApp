@@ -65,6 +65,7 @@ namespace InterfaceLibraryApp
             else
             {
                 GlobalMatrices.usersMatrix[userIdIndex, 4] = "0";
+                MainMethods.WriteToLogs($"Se dio de baja al usuario con ID: {GlobalMatrices.usersMatrix[userIdIndex, 0]}");
                 BasicFileFunctions.WriteChanges(GlobalPaths.usersPath, GlobalMatrices.usersMatrix);
                 return 1;
             }

@@ -19,6 +19,7 @@ namespace InterfaceLibraryApp
                 GlobalMatrices.loansMatrix[GlobalUserValues.userIndex, 3],GlobalMatrices.loansMatrix[GlobalUserValues.userIndex, 4],
                 GlobalMatrices.loansMatrix[GlobalUserValues.userIndex, 5], GlobalMatrices.loansMatrix[GlobalUserValues.userIndex, 6],
                 GlobalMatrices.loansMatrix[GlobalUserValues.userIndex, 7],GlobalMatrices.loansMatrix[GlobalUserValues.userIndex, 8]);
+            MainMethods.WriteToLogs($"El usuario {GlobalUserValues.userIndex} ha visualizado sus prestamos");
         }
     }
 }

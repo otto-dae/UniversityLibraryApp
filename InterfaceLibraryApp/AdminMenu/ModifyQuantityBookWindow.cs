@@ -75,6 +75,7 @@ namespace InterfaceLibraryApp
             {
                 GlobalMatrices.booksMatrix[Bookindex, 1] = NewBookQuantity.Text;
                 BasicFileFunctions.WriteChanges(GlobalPaths.booksPath, GlobalMatrices.booksMatrix);
+                MainMethods.WriteToLogs($"Se modifico la cantidad de libros del libro con ID: {GlobalMatrices.booksMatrix[Bookindex, 0]}");
                 MessageBox.Show("Cantidad de libros modificada correctamente");
                 Close();
             }

@@ -45,6 +45,7 @@ namespace InterfaceLibraryApp
                         }
                     }
                 }
+                MainMethods.WriteToLogs("Busqueda de libros por genero");
             }
             
             if(counter == 0)

@@ -86,13 +86,23 @@ namespace InterfaceLibraryApp
                 return -1;
             }
         }
-        public static void AddtoBitacora (string action)
+        public static void WriteToLogs (string action)
         {
-            StreamWriter bitacora = File.AppendText(GlobalPaths.bitacoraPath);
-            string date = LoanFunctions.DateGen().ToString();
-            string newAction = date + "|" + action;
-            bitacora.WriteLine();
-            bitacora.Write(newAction);
+            StreamWriter logs = File.AppendText(GlobalPaths.logsPath);
+            DateTime dateGen = DateTime.Now;
+            string date = dateGen.ToString();
+            string newAction = $"{GlobalUserValues.ID}|{date}|{action}";
+            logs.WriteLine(newAction);
+            logs.Close();
+        }
+        public static void UserRegistered(string action)
+        {
+            StreamWriter bitacora = File.AppendText(GlobalPaths.logsPath);
+            DateTime dateGen = DateTime.Now;
+            string date = dateGen.ToString();
+            string ID = MainMethods.CreateId(GlobalMatrices.usersMatrix);
+            string newAction = $"{ID}|{date}|{action}";
+            bitacora.WriteLine(newAction);
             bitacora.Close();
         }
     }

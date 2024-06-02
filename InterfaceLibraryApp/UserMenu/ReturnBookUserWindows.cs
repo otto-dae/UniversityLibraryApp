@@ -54,6 +54,7 @@ namespace InterfaceLibraryApp
             {
                 LoanFunctions.ReturnBook(bookIDPos, bookIndex);
                 MessageBox.Show("Libro devuelto con exito");
+                MainMethods.WriteToLogs($"Usuario {GlobalUserValues.ID} devolvio el libro {IDBookReturnBox.Text}");
                 Close();
             }
             else if (counter == 0)

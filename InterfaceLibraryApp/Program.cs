@@ -16,14 +16,14 @@ namespace InterfaceLibraryApp
             BasicFileFunctions.CreateFile(GlobalPaths.usersPath);
             BasicFileFunctions.CreateFile(GlobalPaths.booksPath);
             BasicFileFunctions.CreateFile(GlobalPaths.loansPath);
-            BasicFileFunctions.CreateFile(GlobalPaths.bitacoraPath);
+            BasicFileFunctions.CreateFile(GlobalPaths.logsPath);
             BasicFileFunctions.CreateFile(GlobalPaths.counterPath);
             BasicFileFunctions.CreateFile(GlobalPaths.commentsPath);
 
             GlobalMatrices.usersMatrix = MainMethods.CreateMatrix(GlobalPaths.usersPath);
             GlobalMatrices.booksMatrix = MainMethods.CreateMatrix(GlobalPaths.booksPath);
             GlobalMatrices.loansMatrix = MainMethods.CreateMatrix(GlobalPaths.loansPath);
-            GlobalMatrices.bitacoraMatrix = MainMethods.CreateMatrix(GlobalPaths.bitacoraPath);
+            GlobalMatrices.logsMatrix = MainMethods.CreateMatrix(GlobalPaths.logsPath);
             GlobalMatrices.counterMatrix = MainMethods.CreateMatrix(GlobalPaths.counterPath);
             GlobalMatrices.commentsMatrix = MainMethods.CreateMatrix(GlobalPaths.commentsPath);
 

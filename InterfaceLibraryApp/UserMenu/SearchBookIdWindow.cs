@@ -48,6 +48,7 @@ namespace InterfaceLibraryApp
                 NameLabelBook.Text = $"Nombre: {GlobalMatrices.booksMatrix[idBookIndex, 2]}";
                 GenreLabelBook.Text = $"Generos: {GlobalMatrices.booksMatrix[idBookIndex, 3]}";
                 QuantityBookLabel.Text = $"Cantidad: {GlobalMatrices.booksMatrix[idBookIndex, 1]}";
+                MainMethods.WriteToLogs($"El usuario {GlobalUserValues.ID} ha buscado el libro con ID {idBook}");
             }
 
         }        

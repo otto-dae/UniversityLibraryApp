@@ -27,7 +27,7 @@ namespace InterfaceLibraryApp
                 MessageBox.Show("Porfavor llene todos los campos");
                 return;
             }
-            if(CardTextBox.Text.Length != 16 || CVVTextBox.Text.Length != 3)
+            if (CardTextBox.Text.Length != 16 || CVVTextBox.Text.Length != 3)
             {
                 MessageBox.Show("Porfavor ingrese un numero de tarjeta valido");
                 CardTextBox.Text = "";
@@ -37,7 +37,8 @@ namespace InterfaceLibraryApp
             else
             {
                 MessageBox.Show("Pago realizado con exito");
-                LoanFunctions.ReturnBook(ReturnBookUserWindows.bookIDPos, ReturnBookUserWindows.bookIndex); 
+                LoanFunctions.ReturnBook(ReturnBookUserWindows.bookIDPos, ReturnBookUserWindows.bookIndex);
+                MainMethods.WriteToLogs($"El usuario {GlobalUserValues.userIndex} ha devuelto el libro {GlobalMatrices.booksMatrix[ReturnBookUserWindows.bookIndex, 2]}");
                 Close();
                 ReturnBook.Close();
             }

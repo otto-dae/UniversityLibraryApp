@@ -62,6 +62,7 @@ namespace InterfaceLibraryApp
                 GlobalMatrices.booksMatrix[bookIndex, 2] = NewNameTextBox.Text.Replace('|', '*');
                 BasicFileFunctions.WriteChanges(GlobalPaths.booksPath, GlobalMatrices.booksMatrix);
                 MessageBox.Show("Cambios realizados con éxito");
+                MainMethods.WriteToLogs($"Se modificó el nombre de un libro con ID {SearchIDTextBox.Text}");
                 this.Close();
             }
         }

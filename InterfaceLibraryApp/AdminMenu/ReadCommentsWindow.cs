@@ -21,6 +21,7 @@ namespace InterfaceLibraryApp
             {
                 ViewComments.Rows.Add(GlobalMatrices.commentsMatrix[i, 0], GlobalMatrices.commentsMatrix[i, 1], GlobalMatrices.commentsMatrix[i, 2]);
             }
+            MainMethods.WriteToLogs("Se han leido los comentarios");
         }
     }
 }

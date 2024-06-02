@@ -67,6 +67,7 @@ namespace InterfaceLibraryApp
                 GlobalMatrices.usersMatrix[userIdIndex, 2] = NewNameTextBox.Text.Replace('|', '*');
                 BasicFileFunctions.WriteChanges(GlobalPaths.usersPath, GlobalMatrices.usersMatrix);
                 MessageBox.Show("Nombre cambiado exitosamente");
+                MainMethods.WriteToLogs($"Se cambió el nombre del usuario con ID: {SearchIdTextBox.Text}");
                 Close();
             }
 
