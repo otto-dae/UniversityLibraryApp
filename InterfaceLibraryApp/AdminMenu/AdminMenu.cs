@@ -98,6 +98,8 @@ namespace InterfaceLibraryApp
 
         private void ReadBitacora_Click(object sender, EventArgs e)
         {
+            ReadLogsWindow readLogsWindow = new ReadLogsWindow();
+            readLogsWindow.Show();
 
         }
     }
