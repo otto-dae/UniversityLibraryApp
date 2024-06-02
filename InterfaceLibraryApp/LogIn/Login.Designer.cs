@@ -56,12 +56,14 @@
             // 
             // LogInAccept
             // 
+            LogInAccept.BackColor = Color.FromArgb(95, 145, 222);
+            LogInAccept.FlatStyle = FlatStyle.Popup;
             LogInAccept.Location = new Point(82, 333);
             LogInAccept.Name = "LogInAccept";
             LogInAccept.Size = new Size(75, 23);
             LogInAccept.TabIndex = 2;
             LogInAccept.Text = "Aceptar";
-            LogInAccept.UseVisualStyleBackColor = true;
+            LogInAccept.UseVisualStyleBackColor = false;
             LogInAccept.Click += LogInAccept_Click;
             // 
             // label1
@@ -96,12 +98,14 @@
             // 
             // RegisterButton
             // 
+            RegisterButton.BackColor = Color.FromArgb(95, 145, 222);
+            RegisterButton.FlatStyle = FlatStyle.Popup;
             RegisterButton.Location = new Point(135, 387);
             RegisterButton.Name = "RegisterButton";
             RegisterButton.Size = new Size(75, 23);
             RegisterButton.TabIndex = 3;
             RegisterButton.Text = "Registrar";
-            RegisterButton.UseVisualStyleBackColor = true;
+            RegisterButton.UseVisualStyleBackColor = false;
             RegisterButton.Click += RegisterButton_Click;
             // 
             // pictureBox1
@@ -116,9 +120,9 @@
             // 
             ExitButtonLogIn.BackColor = Color.FromArgb(212, 38, 48);
             ExitButtonLogIn.FlatStyle = FlatStyle.Popup;
-            ExitButtonLogIn.Location = new Point(190, 429);
+            ExitButtonLogIn.Location = new Point(183, 429);
             ExitButtonLogIn.Name = "ExitButtonLogIn";
-            ExitButtonLogIn.Size = new Size(42, 20);
+            ExitButtonLogIn.Size = new Size(49, 20);
             ExitButtonLogIn.TabIndex = 8;
             ExitButtonLogIn.Text = "Salir";
             ExitButtonLogIn.UseVisualStyleBackColor = false;

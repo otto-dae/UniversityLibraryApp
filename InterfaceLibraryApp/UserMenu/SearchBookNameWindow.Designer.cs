@@ -44,24 +44,26 @@
             Label1.AutoSize = true;
             Label1.Font = new Font("Segoe UI", 10F);
             Label1.ForeColor = Color.White;
-            Label1.Location = new Point(22, 20);
+            Label1.Location = new Point(19, 15);
             Label1.Name = "Label1";
-            Label1.Size = new Size(204, 23);
+            Label1.Size = new Size(164, 19);
             Label1.TabIndex = 0;
             Label1.Text = "Ingrese nombre a buscar:";
             // 
             // NameBookTextBox
             // 
-            NameBookTextBox.Location = new Point(232, 20);
+            NameBookTextBox.Location = new Point(203, 15);
+            NameBookTextBox.Margin = new Padding(3, 2, 3, 2);
             NameBookTextBox.Name = "NameBookTextBox";
-            NameBookTextBox.Size = new Size(313, 27);
+            NameBookTextBox.Size = new Size(274, 23);
             NameBookTextBox.TabIndex = 1;
             // 
             // SearchNameButton
             // 
-            SearchNameButton.Location = new Point(551, 20);
+            SearchNameButton.Location = new Point(482, 15);
+            SearchNameButton.Margin = new Padding(3, 2, 3, 2);
             SearchNameButton.Name = "SearchNameButton";
-            SearchNameButton.Size = new Size(73, 27);
+            SearchNameButton.Size = new Size(64, 20);
             SearchNameButton.TabIndex = 2;
             SearchNameButton.Text = "Buscar";
             SearchNameButton.UseVisualStyleBackColor = true;
@@ -69,13 +71,15 @@
             // 
             // ShowBooksGrid
             // 
-            ShowBooksGrid.BackgroundColor = Color.FromArgb(128, 128, 255);
+            ShowBooksGrid.BackgroundColor = Color.FromArgb(13, 53, 115);
+            ShowBooksGrid.BorderStyle = BorderStyle.None;
             ShowBooksGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             ShowBooksGrid.Columns.AddRange(new DataGridViewColumn[] { BookId, NameBook, GenresBook, QuantityBook });
-            ShowBooksGrid.Location = new Point(12, 119);
+            ShowBooksGrid.Location = new Point(10, 89);
+            ShowBooksGrid.Margin = new Padding(3, 2, 3, 2);
             ShowBooksGrid.Name = "ShowBooksGrid";
             ShowBooksGrid.RowHeadersWidth = 51;
-            ShowBooksGrid.Size = new Size(796, 353);
+            ShowBooksGrid.Size = new Size(696, 265);
             ShowBooksGrid.TabIndex = 3;
             // 
             // BookId
@@ -85,7 +89,7 @@
             BookId.MinimumWidth = 6;
             BookId.Name = "BookId";
             BookId.Resizable = DataGridViewTriState.True;
-            BookId.Width = 53;
+            BookId.Width = 43;
             // 
             // NameBook
             // 
@@ -93,7 +97,7 @@
             NameBook.HeaderText = "Nombre";
             NameBook.MinimumWidth = 6;
             NameBook.Name = "NameBook";
-            NameBook.Width = 93;
+            NameBook.Width = 76;
             // 
             // GenresBook
             // 
@@ -101,7 +105,7 @@
             GenresBook.HeaderText = "Generos";
             GenresBook.MinimumWidth = 6;
             GenresBook.Name = "GenresBook";
-            GenresBook.Width = 92;
+            GenresBook.Width = 75;
             // 
             // QuantityBook
             // 
@@ -109,18 +113,19 @@
             QuantityBook.HeaderText = "Disponibles";
             QuantityBook.MinimumWidth = 6;
             QuantityBook.Name = "QuantityBook";
-            QuantityBook.Width = 116;
+            QuantityBook.Width = 93;
             // 
             // SearchBookNameWindow
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(13, 53, 115);
-            ClientSize = new Size(822, 493);
+            ClientSize = new Size(719, 370);
             Controls.Add(ShowBooksGrid);
             Controls.Add(SearchNameButton);
             Controls.Add(NameBookTextBox);
             Controls.Add(Label1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "SearchBookNameWindow";
             Text = "SearchBookNameWindow";
             ((System.ComponentModel.ISupportInitialize)ShowBooksGrid).EndInit();

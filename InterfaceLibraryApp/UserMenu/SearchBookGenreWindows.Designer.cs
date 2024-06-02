@@ -45,21 +45,21 @@
             label1.ForeColor = Color.White;
             label1.Location = new Point(12, 18);
             label1.Name = "label1";
-            label1.Size = new Size(212, 23);
+            label1.Size = new Size(170, 19);
             label1.TabIndex = 0;
             label1.Text = "Ingrese genero/s a buscar:";
             // 
             // GenreBookTextBox
             // 
-            GenreBookTextBox.Location = new Point(230, 18);
+            GenreBookTextBox.Location = new Point(188, 18);
             GenreBookTextBox.Name = "GenreBookTextBox";
-            GenreBookTextBox.Size = new Size(347, 30);
+            GenreBookTextBox.Size = new Size(347, 25);
             GenreBookTextBox.TabIndex = 1;
             // 
             // SearchGenreButton
             // 
             SearchGenreButton.ForeColor = Color.Black;
-            SearchGenreButton.Location = new Point(583, 18);
+            SearchGenreButton.Location = new Point(551, 18);
             SearchGenreButton.Name = "SearchGenreButton";
             SearchGenreButton.Size = new Size(70, 30);
             SearchGenreButton.TabIndex = 2;
@@ -69,13 +69,14 @@
             // 
             // GenreBookSearchGrid
             // 
-            GenreBookSearchGrid.BackgroundColor = Color.FromArgb(128, 128, 255);
+            GenreBookSearchGrid.BackgroundColor = Color.FromArgb(13, 53, 115);
+            GenreBookSearchGrid.BorderStyle = BorderStyle.None;
             GenreBookSearchGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             GenreBookSearchGrid.Columns.AddRange(new DataGridViewColumn[] { IDGenre, NameGenre, GenreGenre, QuiantityGenres });
             GenreBookSearchGrid.Location = new Point(12, 105);
             GenreBookSearchGrid.Name = "GenreBookSearchGrid";
             GenreBookSearchGrid.RowHeadersWidth = 51;
-            GenreBookSearchGrid.Size = new Size(798, 368);
+            GenreBookSearchGrid.Size = new Size(609, 368);
             GenreBookSearchGrid.TabIndex = 3;
             // 
             // IDGenre
@@ -84,7 +85,7 @@
             IDGenre.HeaderText = "ID";
             IDGenre.MinimumWidth = 6;
             IDGenre.Name = "IDGenre";
-            IDGenre.Width = 56;
+            IDGenre.Width = 48;
             // 
             // NameGenre
             // 
@@ -92,7 +93,7 @@
             NameGenre.HeaderText = "Nombre";
             NameGenre.MinimumWidth = 6;
             NameGenre.Name = "NameGenre";
-            NameGenre.Width = 102;
+            NameGenre.Width = 84;
             // 
             // GenreGenre
             // 
@@ -100,7 +101,7 @@
             GenreGenre.HeaderText = "Generos";
             GenreGenre.MinimumWidth = 6;
             GenreGenre.Name = "GenreGenre";
-            GenreGenre.Width = 102;
+            GenreGenre.Width = 85;
             // 
             // QuiantityGenres
             // 
@@ -108,14 +109,14 @@
             QuiantityGenres.HeaderText = "Disponibles";
             QuiantityGenres.MinimumWidth = 6;
             QuiantityGenres.Name = "QuiantityGenres";
-            QuiantityGenres.Width = 126;
+            QuiantityGenres.Width = 104;
             // 
             // SearchBookGenreWindows
             // 
-            AutoScaleDimensions = new SizeF(9F, 23F);
+            AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(13, 53, 115);
-            ClientSize = new Size(822, 493);
+            ClientSize = new Size(645, 493);
             Controls.Add(GenreBookSearchGrid);
             Controls.Add(SearchGenreButton);
             Controls.Add(GenreBookTextBox);

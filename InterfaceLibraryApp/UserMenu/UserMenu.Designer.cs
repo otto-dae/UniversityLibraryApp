@@ -114,7 +114,7 @@
             SearchByIdButton.FlatStyle = FlatStyle.Popup;
             SearchByIdButton.Font = new Font("Segoe UI", 9F);
             SearchByIdButton.ForeColor = Color.Black;
-            SearchByIdButton.Location = new Point(248, 95);
+            SearchByIdButton.Location = new Point(248, 35);
             SearchByIdButton.Name = "SearchByIdButton";
             SearchByIdButton.Size = new Size(47, 24);
             SearchByIdButton.TabIndex = 5;
@@ -129,7 +129,7 @@
             SearchByNameButton.Font = new Font("Segoe UI", 8F);
             SearchByNameButton.ForeColor = Color.Black;
             SearchByNameButton.ImageAlign = ContentAlignment.TopCenter;
-            SearchByNameButton.Location = new Point(248, 35);
+            SearchByNameButton.Location = new Point(248, 65);
             SearchByNameButton.Name = "SearchByNameButton";
             SearchByNameButton.Size = new Size(74, 24);
             SearchByNameButton.TabIndex = 6;
@@ -143,7 +143,7 @@
             SearchByGenreButton.FlatStyle = FlatStyle.Popup;
             SearchByGenreButton.Font = new Font("Segoe UI", 9F);
             SearchByGenreButton.ForeColor = Color.Black;
-            SearchByGenreButton.Location = new Point(248, 65);
+            SearchByGenreButton.Location = new Point(248, 95);
             SearchByGenreButton.Name = "SearchByGenreButton";
             SearchByGenreButton.Size = new Size(84, 24);
             SearchByGenreButton.TabIndex = 7;

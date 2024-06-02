@@ -15,6 +15,7 @@ namespace InterfaceLibraryApp
         public SearchBookIdWindow()
         {
             InitializeComponent();
+            NameLabelBook.Hide();
         }
         private void SearchButtonID_Click(object sender, EventArgs e)
         {
@@ -24,13 +25,14 @@ namespace InterfaceLibraryApp
             {
                 if (GlobalMatrices.booksMatrix[i, 0] == idBook)
                 {
+                    NameLabelBook.Show();
                     NameLabelBook.Text = $"Nombre: {GlobalMatrices.booksMatrix[i, 2]}";
                     GenreLabelBook.Text = $"Generos: {GlobalMatrices.booksMatrix[i, 3]}";
                     QuantityBookLabel.Text = $"Cantidad: {GlobalMatrices.booksMatrix[i, 1]}";
                     return;
                 }
             }
-            NameLabelBook.Text = "Nombre: ";
+            NameLabelBook.Hide();
             GenreLabelBook.Text = "Generos: ";
             QuantityBookLabel.Text = "Cantidad: ";
             MessageBox.Show("No se encontro el libro");

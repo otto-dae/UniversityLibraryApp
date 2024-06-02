@@ -42,17 +42,18 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 10F);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(12, 21);
+            label1.Location = new Point(10, 16);
             label1.Name = "label1";
-            label1.Size = new Size(254, 23);
+            label1.Size = new Size(203, 19);
             label1.TabIndex = 0;
             label1.Text = "Ingrese el Id del libro a buscar : ";
             // 
             // IdBookTextBox
             // 
-            IdBookTextBox.Location = new Point(272, 21);
+            IdBookTextBox.Location = new Point(238, 16);
+            IdBookTextBox.Margin = new Padding(3, 2, 3, 2);
             IdBookTextBox.Name = "IdBookTextBox";
-            IdBookTextBox.Size = new Size(174, 27);
+            IdBookTextBox.Size = new Size(153, 23);
             IdBookTextBox.TabIndex = 1;
             // 
             // label2
@@ -60,9 +61,9 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 10F);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(12, 80);
+            label2.Location = new Point(10, 60);
             label2.Name = "label2";
-            label2.Size = new Size(145, 23);
+            label2.Size = new Size(117, 19);
             label2.TabIndex = 2;
             label2.Text = "Libro Encontrado:";
             // 
@@ -71,9 +72,9 @@
             NameLabelBook.AutoSize = true;
             NameLabelBook.Font = new Font("Segoe UI", 10F);
             NameLabelBook.ForeColor = Color.White;
-            NameLabelBook.Location = new Point(163, 80);
+            NameLabelBook.Location = new Point(123, 60);
             NameLabelBook.Name = "NameLabelBook";
-            NameLabelBook.Size = new Size(56, 23);
+            NameLabelBook.Size = new Size(45, 19);
             NameLabelBook.TabIndex = 3;
             NameLabelBook.Text = "Name";
             // 
@@ -82,9 +83,9 @@
             GenreLabelBook.AutoSize = true;
             GenreLabelBook.Font = new Font("Segoe UI", 10F);
             GenreLabelBook.ForeColor = Color.White;
-            GenreLabelBook.Location = new Point(12, 114);
+            GenreLabelBook.Location = new Point(10, 86);
             GenreLabelBook.Name = "GenreLabelBook";
-            GenreLabelBook.Size = new Size(82, 23);
+            GenreLabelBook.Size = new Size(67, 19);
             GenreLabelBook.TabIndex = 4;
             GenreLabelBook.Text = "Generos: ";
             // 
@@ -93,17 +94,18 @@
             QuantityBookLabel.AutoSize = true;
             QuantityBookLabel.Font = new Font("Segoe UI", 9F);
             QuantityBookLabel.ForeColor = Color.White;
-            QuantityBookLabel.Location = new Point(333, 159);
+            QuantityBookLabel.Location = new Point(291, 119);
             QuantityBookLabel.Name = "QuantityBookLabel";
-            QuantityBookLabel.Size = new Size(90, 20);
+            QuantityBookLabel.Size = new Size(71, 15);
             QuantityBookLabel.TabIndex = 5;
             QuantityBookLabel.Text = "Disponibles:";
             // 
             // SearchButtonID
             // 
-            SearchButtonID.Location = new Point(452, 21);
+            SearchButtonID.Location = new Point(396, 16);
+            SearchButtonID.Margin = new Padding(3, 2, 3, 2);
             SearchButtonID.Name = "SearchButtonID";
-            SearchButtonID.Size = new Size(60, 27);
+            SearchButtonID.Size = new Size(52, 20);
             SearchButtonID.TabIndex = 6;
             SearchButtonID.Text = "Buscar";
             SearchButtonID.UseVisualStyleBackColor = true;
@@ -111,10 +113,10 @@
             // 
             // SearchBookIdWindow
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(13, 53, 115);
-            ClientSize = new Size(524, 199);
+            ClientSize = new Size(458, 149);
             Controls.Add(SearchButtonID);
             Controls.Add(QuantityBookLabel);
             Controls.Add(GenreLabelBook);
@@ -122,6 +124,7 @@
             Controls.Add(label2);
             Controls.Add(IdBookTextBox);
             Controls.Add(label1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "SearchBookIdWindow";
             Text = "SearchBookIdWindow";
             ResumeLayout(false);
