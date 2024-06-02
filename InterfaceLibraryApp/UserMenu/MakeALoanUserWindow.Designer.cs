@@ -56,12 +56,14 @@
             // 
             // SearchBookForLoanButton
             // 
-            SearchBookForLoanButton.Location = new Point(373, 31);
+            SearchBookForLoanButton.BackColor = Color.FromArgb(95, 145, 222);
+            SearchBookForLoanButton.FlatStyle = FlatStyle.Popup;
+            SearchBookForLoanButton.Location = new Point(373, 30);
             SearchBookForLoanButton.Name = "SearchBookForLoanButton";
             SearchBookForLoanButton.Size = new Size(63, 24);
             SearchBookForLoanButton.TabIndex = 2;
             SearchBookForLoanButton.Text = "Buscar";
-            SearchBookForLoanButton.UseVisualStyleBackColor = true;
+            SearchBookForLoanButton.UseVisualStyleBackColor = false;
             SearchBookForLoanButton.Click += SearchBookForLoanButton_Click;
             // 
             // NameBookLoanPompt
@@ -88,12 +90,14 @@
             // 
             // AcceptButtonLoanUser
             // 
+            AcceptButtonLoanUser.BackColor = Color.FromArgb(95, 145, 222);
+            AcceptButtonLoanUser.FlatStyle = FlatStyle.Popup;
             AcceptButtonLoanUser.Location = new Point(12, 140);
             AcceptButtonLoanUser.Name = "AcceptButtonLoanUser";
             AcceptButtonLoanUser.Size = new Size(59, 24);
             AcceptButtonLoanUser.TabIndex = 5;
             AcceptButtonLoanUser.Text = "Aceptar";
-            AcceptButtonLoanUser.UseVisualStyleBackColor = true;
+            AcceptButtonLoanUser.UseVisualStyleBackColor = false;
             AcceptButtonLoanUser.Click += AcceptButtonLoanUser_Click;
             // 
             // MakeALoanUserWindow
@@ -101,7 +105,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(13, 53, 115);
-            ClientSize = new Size(448, 341);
+            ClientSize = new Size(448, 175);
             Controls.Add(AcceptButtonLoanUser);
             Controls.Add(BookNameForLoanUser);
             Controls.Add(NameBookLoanPompt);

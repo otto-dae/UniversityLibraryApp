@@ -49,5 +49,39 @@ namespace InterfaceLibraryApp
             ChangeNameWindow changeNameWindow = new ChangeNameWindow();
             changeNameWindow.Show();
         }
+        private void AddNewBookAdminButton_Click(object sender, EventArgs e)
+        {
+            AddNewBookWindow addNewBookWindow = new AddNewBookWindow();
+            addNewBookWindow.Show();
+        }
+        private void ReUpbookButton_Click(object sender, EventArgs e)
+        {
+            ActivateBookWindow activateBookWindow = new ActivateBookWindow();
+            activateBookWindow.Show();
+        }
+        private void UnregisterBookAdminButton_Click(object sender, EventArgs e)
+        {
+            DeactivateBookWindow deactivateBookWindow = new DeactivateBookWindow();
+            deactivateBookWindow.Show();
+        }
+        private void ModifyNameBookAdminButton_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void ChangeGenreButton_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void ModifyQuantityBookAdminButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ShowUserMenuButton_Click(object sender, EventArgs e)
+        {
+            UserMenu userMenu = new UserMenu(MainlogIn);
+            userMenu.Show();
+            Close();
+        }
     }
 }

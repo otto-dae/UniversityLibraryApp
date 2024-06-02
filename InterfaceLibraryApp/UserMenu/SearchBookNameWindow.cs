@@ -15,13 +15,20 @@ namespace InterfaceLibraryApp
         public SearchBookNameWindow()
         {
             InitializeComponent();
+            ShowBooksGrid.Hide();
         }
         private void SearchNameButton_Click(object sender, EventArgs e)
         {
             string nameBook = NameBookTextBox.Text;
             nameBook = nameBook.ToLower().Trim();
             ShowBooksGrid.Rows.Clear();
+
             int counter = 0;
+            if (nameBook == "")
+            {
+                MessageBox.Show("Por favor, ingrese un nombre");
+                return;
+            }
 
             for (int i = 0; i < GlobalMatrices.booksMatrix.GetLength(0); i++)
             {

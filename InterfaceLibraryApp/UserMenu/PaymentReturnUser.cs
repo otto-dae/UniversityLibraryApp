@@ -25,12 +25,14 @@ namespace InterfaceLibraryApp
             if (CardTextBox.Text == "" || CVVTextBox.Text == "")
             {
                 MessageBox.Show("Porfavor llene todos los campos");
+                return;
             }
             if(CardTextBox.Text.Length != 16 || CVVTextBox.Text.Length != 3)
             {
                 MessageBox.Show("Porfavor ingrese un numero de tarjeta valido");
                 CardTextBox.Text = "";
                 CVVTextBox.Text = "";
+                return;
             }
             else
             {

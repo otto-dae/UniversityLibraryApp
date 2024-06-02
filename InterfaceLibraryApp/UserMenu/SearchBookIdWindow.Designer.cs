@@ -102,13 +102,15 @@
             // 
             // SearchButtonID
             // 
+            SearchButtonID.BackColor = Color.FromArgb(95, 145, 222);
+            SearchButtonID.FlatStyle = FlatStyle.Popup;
             SearchButtonID.Location = new Point(396, 16);
             SearchButtonID.Margin = new Padding(3, 2, 3, 2);
             SearchButtonID.Name = "SearchButtonID";
-            SearchButtonID.Size = new Size(52, 20);
+            SearchButtonID.Size = new Size(52, 23);
             SearchButtonID.TabIndex = 6;
             SearchButtonID.Text = "Buscar";
-            SearchButtonID.UseVisualStyleBackColor = true;
+            SearchButtonID.UseVisualStyleBackColor = false;
             SearchButtonID.Click += SearchButtonID_Click;
             // 
             // SearchBookIdWindow

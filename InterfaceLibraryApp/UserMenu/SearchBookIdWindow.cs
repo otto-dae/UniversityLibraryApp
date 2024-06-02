@@ -16,26 +16,34 @@ namespace InterfaceLibraryApp
         {
             InitializeComponent();
             NameLabelBook.Hide();
+            GenreLabelBook.Hide();
+            QuantityBookLabel.Hide();
         }
         private void SearchButtonID_Click(object sender, EventArgs e)
         {
             string idBook = IdBookTextBox.Text;
-
-            for (int i = 0; i < GlobalMatrices.booksMatrix.GetLength(0); i++)
+            if (idBook == "")
             {
-                if (GlobalMatrices.booksMatrix[i, 0] == idBook)
-                {
-                    NameLabelBook.Show();
-                    NameLabelBook.Text = $"Nombre: {GlobalMatrices.booksMatrix[i, 2]}";
-                    GenreLabelBook.Text = $"Generos: {GlobalMatrices.booksMatrix[i, 3]}";
-                    QuantityBookLabel.Text = $"Cantidad: {GlobalMatrices.booksMatrix[i, 1]}";
-                    return;
-                }
+                MessageBox.Show("Por favor, ingrese un ID");
+                return;
             }
-            NameLabelBook.Hide();
-            GenreLabelBook.Text = "Generos: ";
-            QuantityBookLabel.Text = "Cantidad: ";
-            MessageBox.Show("No se encontro el libro");
+            int idBookIndex = MainMethods.FindID(GlobalMatrices.booksMatrix, idBook);
+            if (idBookIndex == -1)
+            {
+                MessageBox.Show("No se encontró el libro");
+                IdBookTextBox.Clear();
+                return;
+            }
+            else
+            {
+                NameLabelBook.Show();
+                GenreLabelBook.Show();
+                QuantityBookLabel.Show();
+                NameLabelBook.Text = $"Nombre: {GlobalMatrices.booksMatrix[idBookIndex, 2]}";
+                GenreLabelBook.Text = $"Generos: {GlobalMatrices.booksMatrix[idBookIndex, 3]}";
+                QuantityBookLabel.Text = $"Cantidad: {GlobalMatrices.booksMatrix[idBookIndex, 1]}";
+            }
+
         }        
     }
 }

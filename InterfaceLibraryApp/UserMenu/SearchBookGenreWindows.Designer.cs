@@ -36,6 +36,7 @@
             NameGenre = new DataGridViewTextBoxColumn();
             GenreGenre = new DataGridViewTextBoxColumn();
             QuiantityGenres = new DataGridViewTextBoxColumn();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)GenreBookSearchGrid).BeginInit();
             SuspendLayout();
             // 
@@ -58,13 +59,15 @@
             // 
             // SearchGenreButton
             // 
+            SearchGenreButton.BackColor = Color.FromArgb(95, 145, 222);
+            SearchGenreButton.FlatStyle = FlatStyle.Popup;
             SearchGenreButton.ForeColor = Color.Black;
             SearchGenreButton.Location = new Point(551, 18);
             SearchGenreButton.Name = "SearchGenreButton";
-            SearchGenreButton.Size = new Size(70, 30);
+            SearchGenreButton.Size = new Size(70, 25);
             SearchGenreButton.TabIndex = 2;
             SearchGenreButton.Text = "Buscar";
-            SearchGenreButton.UseVisualStyleBackColor = true;
+            SearchGenreButton.UseVisualStyleBackColor = false;
             SearchGenreButton.Click += SearchGenreButton_Click;
             // 
             // GenreBookSearchGrid
@@ -111,12 +114,23 @@
             QuiantityGenres.Name = "QuiantityGenres";
             QuiantityGenres.Width = 104;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.ForeColor = Color.FromArgb(128, 128, 255);
+            label2.Location = new Point(185, 46);
+            label2.Name = "label2";
+            label2.Size = new Size(350, 19);
+            label2.TabIndex = 4;
+            label2.Text = "En caso de ingresar multiples generos separar por coma";
+            // 
             // SearchBookGenreWindows
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(13, 53, 115);
             ClientSize = new Size(645, 493);
+            Controls.Add(label2);
             Controls.Add(GenreBookSearchGrid);
             Controls.Add(SearchGenreButton);
             Controls.Add(GenreBookTextBox);
@@ -140,5 +154,6 @@
         private DataGridViewTextBoxColumn NameGenre;
         private DataGridViewTextBoxColumn GenreGenre;
         private DataGridViewTextBoxColumn QuiantityGenres;
+        private Label label2;
     }
 }

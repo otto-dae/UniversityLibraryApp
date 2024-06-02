@@ -44,6 +44,8 @@
             ReadLoansAdminButton = new Button();
             ReUpbookButton = new Button();
             ExitButton = new Button();
+            ChangeGenreButton = new Button();
+            ShowUserMenuButton = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -153,6 +155,7 @@
             AddNewBookAdminButton.TabIndex = 9;
             AddNewBookAdminButton.Text = "Agregar libro";
             AddNewBookAdminButton.UseVisualStyleBackColor = false;
+            AddNewBookAdminButton.Click += AddNewBookAdminButton_Click;
             // 
             // UnregisterBookAdminButton
             // 
@@ -165,6 +168,7 @@
             UnregisterBookAdminButton.TabIndex = 10;
             UnregisterBookAdminButton.Text = "Dar de baja";
             UnregisterBookAdminButton.UseVisualStyleBackColor = false;
+            UnregisterBookAdminButton.Click += UnregisterBookAdminButton_Click;
             // 
             // ModifyNameBookAdminButton
             // 
@@ -177,24 +181,26 @@
             ModifyNameBookAdminButton.TabIndex = 11;
             ModifyNameBookAdminButton.Text = "Modificar nombre";
             ModifyNameBookAdminButton.UseVisualStyleBackColor = false;
+            ModifyNameBookAdminButton.Click += ModifyNameBookAdminButton_Click;
             // 
             // ModifyQuantityBookAdminButton
             // 
             ModifyQuantityBookAdminButton.BackColor = Color.FromArgb(95, 145, 222);
             ModifyQuantityBookAdminButton.FlatStyle = FlatStyle.Popup;
-            ModifyQuantityBookAdminButton.Location = new Point(220, 271);
+            ModifyQuantityBookAdminButton.Location = new Point(220, 301);
             ModifyQuantityBookAdminButton.Margin = new Padding(3, 2, 3, 2);
             ModifyQuantityBookAdminButton.Name = "ModifyQuantityBookAdminButton";
             ModifyQuantityBookAdminButton.Size = new Size(115, 22);
             ModifyQuantityBookAdminButton.TabIndex = 12;
             ModifyQuantityBookAdminButton.Text = "Modificar cantidad";
             ModifyQuantityBookAdminButton.UseVisualStyleBackColor = false;
+            ModifyQuantityBookAdminButton.Click += ModifyQuantityBookAdminButton_Click;
             // 
             // ReadCommentsAdminButton
             // 
             ReadCommentsAdminButton.BackColor = Color.FromArgb(95, 145, 222);
             ReadCommentsAdminButton.FlatStyle = FlatStyle.Popup;
-            ReadCommentsAdminButton.Location = new Point(11, 250);
+            ReadCommentsAdminButton.Location = new Point(12, 274);
             ReadCommentsAdminButton.Margin = new Padding(3, 2, 3, 2);
             ReadCommentsAdminButton.Name = "ReadCommentsAdminButton";
             ReadCommentsAdminButton.Size = new Size(115, 22);
@@ -206,7 +212,7 @@
             // 
             ReadLoansAdminButton.BackColor = Color.FromArgb(95, 145, 222);
             ReadLoansAdminButton.FlatStyle = FlatStyle.Popup;
-            ReadLoansAdminButton.Location = new Point(11, 276);
+            ReadLoansAdminButton.Location = new Point(12, 300);
             ReadLoansAdminButton.Margin = new Padding(3, 2, 3, 2);
             ReadLoansAdminButton.Name = "ReadLoansAdminButton";
             ReadLoansAdminButton.Size = new Size(149, 22);
@@ -224,12 +230,13 @@
             ReUpbookButton.TabIndex = 15;
             ReUpbookButton.Text = "Dar de alta ";
             ReUpbookButton.UseVisualStyleBackColor = false;
+            ReUpbookButton.Click += ReUpbookButton_Click;
             // 
             // ExitButton
             // 
             ExitButton.BackColor = Color.FromArgb(212, 38, 48);
             ExitButton.FlatStyle = FlatStyle.Popup;
-            ExitButton.Location = new Point(367, 271);
+            ExitButton.Location = new Point(370, 301);
             ExitButton.Name = "ExitButton";
             ExitButton.Size = new Size(59, 22);
             ExitButton.TabIndex = 16;
@@ -237,12 +244,38 @@
             ExitButton.UseVisualStyleBackColor = false;
             ExitButton.Click += ExitButton_Click;
             // 
+            // ChangeGenreButton
+            // 
+            ChangeGenreButton.BackColor = Color.FromArgb(95, 145, 222);
+            ChangeGenreButton.FlatStyle = FlatStyle.Popup;
+            ChangeGenreButton.Location = new Point(220, 274);
+            ChangeGenreButton.Name = "ChangeGenreButton";
+            ChangeGenreButton.Size = new Size(113, 22);
+            ChangeGenreButton.TabIndex = 17;
+            ChangeGenreButton.Text = "Modificar Generos";
+            ChangeGenreButton.UseVisualStyleBackColor = false;
+            ChangeGenreButton.Click += ChangeGenreButton_Click;
+            // 
+            // ShowUserMenuButton
+            // 
+            ShowUserMenuButton.BackColor = Color.FromArgb(95, 145, 222);
+            ShowUserMenuButton.FlatStyle = FlatStyle.Popup;
+            ShowUserMenuButton.Location = new Point(12, 245);
+            ShowUserMenuButton.Name = "ShowUserMenuButton";
+            ShowUserMenuButton.Size = new Size(134, 24);
+            ShowUserMenuButton.TabIndex = 18;
+            ShowUserMenuButton.Text = "Mostrar menu usuario";
+            ShowUserMenuButton.UseVisualStyleBackColor = false;
+            ShowUserMenuButton.Click += ShowUserMenuButton_Click;
+            // 
             // AdminMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(13, 53, 115);
-            ClientSize = new Size(441, 307);
+            ClientSize = new Size(441, 338);
+            Controls.Add(ShowUserMenuButton);
+            Controls.Add(ChangeGenreButton);
             Controls.Add(ExitButton);
             Controls.Add(ReUpbookButton);
             Controls.Add(ReadLoansAdminButton);
@@ -285,5 +318,7 @@
         private Button ReadLoansAdminButton;
         private Button ReUpbookButton;
         private Button ExitButton;
+        private Button ChangeGenreButton;
+        private Button ShowUserMenuButton;
     }
 }

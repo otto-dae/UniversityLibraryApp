@@ -1,6 +1,6 @@
 ﻿namespace InterfaceLibraryApp
 {
-    partial class UserMakeaComment
+    partial class DeactivateBookWindow
     {
         /// <summary>
         /// Required designer variable.
@@ -29,51 +29,51 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            CommentBox = new TextBox();
-            CommentButton = new Button();
+            SearchIdTextBox = new TextBox();
+            AcceptButton = new Button();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 11F);
+            label1.Font = new Font("Segoe UI", 10F);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(12, 9);
+            label1.Location = new Point(11, 18);
             label1.Name = "label1";
-            label1.Size = new Size(156, 20);
+            label1.Size = new Size(159, 19);
             label1.TabIndex = 0;
-            label1.Text = "Ingrese el comentario:";
+            label1.Text = "ID de libro a dar de baja:";
             // 
-            // CommentBox
+            // SearchIdTextBox
             // 
-            CommentBox.Location = new Point(12, 32);
-            CommentBox.Name = "CommentBox";
-            CommentBox.Size = new Size(289, 23);
-            CommentBox.TabIndex = 1;
+            SearchIdTextBox.Location = new Point(176, 18);
+            SearchIdTextBox.Name = "SearchIdTextBox";
+            SearchIdTextBox.Size = new Size(116, 23);
+            SearchIdTextBox.TabIndex = 1;
             // 
-            // CommentButton
+            // AcceptButton
             // 
-            CommentButton.BackColor = Color.FromArgb(95, 145, 222);
-            CommentButton.FlatStyle = FlatStyle.Popup;
-            CommentButton.Location = new Point(166, 267);
-            CommentButton.Name = "CommentButton";
-            CommentButton.Size = new Size(77, 23);
-            CommentButton.TabIndex = 2;
-            CommentButton.Text = "Comentar";
-            CommentButton.UseVisualStyleBackColor = false;
-            CommentButton.Click += CommentButton_Click;
+            AcceptButton.BackColor = Color.FromArgb(95, 145, 222);
+            AcceptButton.FlatStyle = FlatStyle.Popup;
+            AcceptButton.Location = new Point(122, 56);
+            AcceptButton.Name = "AcceptButton";
+            AcceptButton.Size = new Size(60, 23);
+            AcceptButton.TabIndex = 2;
+            AcceptButton.Text = "Aceptar";
+            AcceptButton.UseVisualStyleBackColor = false;
+            AcceptButton.Click += AcceptButton_Click;
             // 
-            // UserMakeaComment
+            // DeactivateBookWindow
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(13, 53, 115);
-            ClientSize = new Size(406, 302);
-            Controls.Add(CommentButton);
-            Controls.Add(CommentBox);
+            ClientSize = new Size(304, 91);
+            Controls.Add(AcceptButton);
+            Controls.Add(SearchIdTextBox);
             Controls.Add(label1);
-            Name = "UserMakeaComment";
-            Text = "UserMakeaComment";
+            Name = "DeactivateBookWindow";
+            Text = "DeactivateBookWindow";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -81,7 +81,7 @@
         #endregion
 
         private Label label1;
-        private TextBox CommentBox;
-        private Button CommentButton;
+        private TextBox SearchIdTextBox;
+        private Button AcceptButton;
     }
 }

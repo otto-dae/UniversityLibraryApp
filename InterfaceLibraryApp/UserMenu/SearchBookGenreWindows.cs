@@ -16,6 +16,7 @@ namespace InterfaceLibraryApp
         public SearchBookGenreWindows()
         {
             InitializeComponent();
+            GenreBookSearchGrid.Hide();
         }
 
         private void SearchGenreButton_Click(object sender, EventArgs e)
@@ -24,6 +25,11 @@ namespace InterfaceLibraryApp
             string[] genres = genre.Split(',');
             GenreBookSearchGrid.Rows.Clear();
             int counter = 0;
+            if(genre == "")
+            {
+                MessageBox.Show("Por favor, ingrese un o multiples generos");
+                return;
+            }
 
             for(int i = 0; i < GlobalMatrices.booksMatrix.GetLength(0); i++)
             {
@@ -40,6 +46,7 @@ namespace InterfaceLibraryApp
             if(counter == 0)
             {
                 MessageBox.Show("No se encontro ejemplares");
+                return;
             }
         }
     }

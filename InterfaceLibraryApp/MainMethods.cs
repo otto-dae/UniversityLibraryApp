@@ -74,5 +74,17 @@ namespace InterfaceLibraryApp
             }
             return -1;
         }
+        public static int IsNumber(string text)
+        {
+            int intValue;
+            if (int.TryParse(text, out intValue))
+            {
+                return intValue;
+            }
+            else
+            {
+                return -1;
+            }
+        }
     }
 }

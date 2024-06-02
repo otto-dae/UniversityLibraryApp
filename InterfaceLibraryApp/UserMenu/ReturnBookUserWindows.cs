@@ -29,9 +29,8 @@ namespace InterfaceLibraryApp
 
             if (IDBookReturnBox.Text == "")
             {
-                counter++;
                 MessageBox.Show("Porfavor ingrese un ID");
-                Close();
+                return;
             }
             
             bookIndex = LoanFunctions.FindIDBook(GlobalMatrices.loansMatrix, IDBookReturnBox.Text, GlobalUserValues.userIndex);
@@ -41,7 +40,6 @@ namespace InterfaceLibraryApp
                 MessageBox.Show("El libro no se encuentra en su lista de prestamos");
                 Close();
             }
-
             if (counter == 0)
             {
                 dateLoan = GlobalMatrices.loansMatrix[GlobalUserValues.userIndex, bookIndex + 1];
@@ -55,6 +53,7 @@ namespace InterfaceLibraryApp
             }
             else if (counter == 0)
             {
+                MessageBox.Show($"El libro se encuentra atrasado por {differenceDay} dias, porfavor pague la multa");
                 PaymentReturnUser paymentReturnUser = new PaymentReturnUser(this,bookIDPos, bookIndex);
                 paymentReturnUser.Show();
             }

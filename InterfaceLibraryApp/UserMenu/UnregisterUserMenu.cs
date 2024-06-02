@@ -21,6 +21,11 @@ namespace InterfaceLibraryApp
         }
         private void AcceptButtonUserDown_Click(object sender, EventArgs e)
         {
+            if(PasswordUserDownBox.Text == "")
+            {
+                MessageBox.Show("Por favor, ingrese su contraseña");
+                return;
+            }
             int userDown = UserDown(PasswordUserDownBox.Text);
             if (userDown == 1)
             {

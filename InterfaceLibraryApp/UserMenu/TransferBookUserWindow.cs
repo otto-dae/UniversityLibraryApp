@@ -33,7 +33,7 @@ namespace InterfaceLibraryApp
             {
                 counter++;
                 MessageBox.Show("Por favor, llena todos los campos");
-                Close();
+                return;
             }
             else
             {
@@ -62,7 +62,7 @@ namespace InterfaceLibraryApp
             if(targetUserIndex == -1)
             {
                 counter++;
-                MessageBox.Show("El usuario al que deseas transferir el libro no existe");
+                MessageBox.Show("El usuario al que deseas transferir el libro, no existe");
                 Close();
             }
             if(targetUserLoanPos == -1)

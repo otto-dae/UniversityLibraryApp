@@ -58,9 +58,9 @@
             LoanVisualizerUser.BorderStyle = BorderStyle.None;
             LoanVisualizerUser.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             LoanVisualizerUser.Columns.AddRange(new DataGridViewColumn[] { BookId1, BookDate1, BookId2, BookDate2, BookId3, BookDate3, BookId4, Bookdate4 });
-            LoanVisualizerUser.Location = new Point(12, 79);
+            LoanVisualizerUser.Location = new Point(12, 50);
             LoanVisualizerUser.Name = "LoanVisualizerUser";
-            LoanVisualizerUser.Size = new Size(972, 49);
+            LoanVisualizerUser.Size = new Size(999, 49);
             LoanVisualizerUser.TabIndex = 1;
             // 
             // BookId1
@@ -124,7 +124,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(13, 53, 115);
-            ClientSize = new Size(996, 216);
+            ClientSize = new Size(1023, 127);
             Controls.Add(LoanVisualizerUser);
             Controls.Add(label1);
             Name = "DisplayUserLoanWindow";

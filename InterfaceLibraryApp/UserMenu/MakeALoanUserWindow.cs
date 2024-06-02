@@ -24,11 +24,17 @@ namespace InterfaceLibraryApp
         private void SearchBookForLoanButton_Click(object sender, EventArgs e)
         { 
             int bookIndex = MainMethods.FindID(GlobalMatrices.booksMatrix, InsertIdBookLoanUser.Text);
+            if(InsertIdBookLoanUser.Text == "")
+            {
+                MessageBox.Show("Por favor, ingrese un ID");
+                return;
+            }
 
             if (bookIndex == -1)
             {
                 MessageBox.Show("No se encontró el libro");
-                Close();
+                InsertIdBookLoanUser.Clear();
+                return;
             }
             else
             {

@@ -60,13 +60,15 @@
             // 
             // SearchNameButton
             // 
+            SearchNameButton.BackColor = Color.FromArgb(95, 145, 222);
+            SearchNameButton.FlatStyle = FlatStyle.Popup;
             SearchNameButton.Location = new Point(482, 15);
             SearchNameButton.Margin = new Padding(3, 2, 3, 2);
             SearchNameButton.Name = "SearchNameButton";
-            SearchNameButton.Size = new Size(64, 20);
+            SearchNameButton.Size = new Size(64, 23);
             SearchNameButton.TabIndex = 2;
             SearchNameButton.Text = "Buscar";
-            SearchNameButton.UseVisualStyleBackColor = true;
+            SearchNameButton.UseVisualStyleBackColor = false;
             SearchNameButton.Click += SearchNameButton_Click;
             // 
             // ShowBooksGrid

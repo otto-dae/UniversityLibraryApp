@@ -55,12 +55,14 @@
             // 
             // button1
             // 
-            button1.Location = new Point(182, 131);
+            button1.BackColor = Color.FromArgb(95, 145, 222);
+            button1.FlatStyle = FlatStyle.Popup;
+            button1.Location = new Point(132, 131);
             button1.Name = "button1";
             button1.Size = new Size(60, 24);
             button1.TabIndex = 2;
             button1.Text = "Aceptar";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // InsertIdTargetPrompt
@@ -86,7 +88,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(13, 53, 115);
-            ClientSize = new Size(415, 167);
+            ClientSize = new Size(344, 167);
             Controls.Add(IdTargetTransferUser);
             Controls.Add(InsertIdTargetPrompt);
             Controls.Add(button1);

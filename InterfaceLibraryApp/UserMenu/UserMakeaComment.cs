@@ -23,6 +23,7 @@ namespace InterfaceLibraryApp
             if (CommentBox.Text == "")
             {
                 MessageBox.Show("Por favor, escribe un comentario");
+                return;
             }
             else
             {
@@ -31,7 +32,7 @@ namespace InterfaceLibraryApp
                 addComment.WriteLine(newComment);
                 addComment.Close();
                 MessageBox.Show("Comentario agregado");
-                this.Close();
+                Close();
             }
         }
     }
