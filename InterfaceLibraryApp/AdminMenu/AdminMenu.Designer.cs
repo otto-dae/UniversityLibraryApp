@@ -116,6 +116,7 @@
             ChangePrivilagesAdminButton.TabIndex = 6;
             ChangePrivilagesAdminButton.Text = "Cambiar privilegios";
             ChangePrivilagesAdminButton.UseVisualStyleBackColor = false;
+            ChangePrivilagesAdminButton.Click += ChangePrivilagesAdminButton_Click;
             // 
             // ModifyNameUserAdminButton
             // 
@@ -128,6 +129,7 @@
             ModifyNameUserAdminButton.TabIndex = 7;
             ModifyNameUserAdminButton.Text = "Modificar nombre";
             ModifyNameUserAdminButton.UseVisualStyleBackColor = false;
+            ModifyNameUserAdminButton.Click += ModifyNameUserAdminButton_Click;
             // 
             // AdminBooksPrompt
             // 

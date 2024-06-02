@@ -36,7 +36,18 @@ namespace InterfaceLibraryApp
         }
         private void DeactivateUserAdminButton_Click(object sender, EventArgs e)
         {
-
+            IdDown idDown = new IdDown();
+            idDown.Show();
+        }
+        private void ChangePrivilagesAdminButton_Click(object sender, EventArgs e)
+        {
+            ChangePrivilagesWindow changePrivilagesWindow = new ChangePrivilagesWindow();
+            changePrivilagesWindow.Show();
+        }
+        private void ModifyNameUserAdminButton_Click(object sender, EventArgs e)
+        {
+            ChangeNameWindow changeNameWindow = new ChangeNameWindow();
+            changeNameWindow.Show();
         }
     }
 }
