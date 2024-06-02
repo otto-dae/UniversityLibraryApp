@@ -29,7 +29,6 @@ namespace InterfaceLibraryApp
             UnregisterUserMenu unregisterUserMenu = new UnregisterUserMenu();
             unregisterUserMenu.Show();
         }
-
         private void SearchByIdButton_Click(object sender, EventArgs e)
         {
             SearchBookIdWindow searchBookIdWindow = new SearchBookIdWindow();
@@ -40,19 +39,16 @@ namespace InterfaceLibraryApp
             SearchBookNameWindow searchBookNameWindow = new SearchBookNameWindow();
             searchBookNameWindow.Show();
         }
-
         private void SearchByGenreButton_Click(object sender, EventArgs e)
         {
             SearchBookGenreWindows searchBookGenreWindows = new SearchBookGenreWindows();
             searchBookGenreWindows.Show();
         }
-
         private void MakeaLoanButton_Click(object sender, EventArgs e)
         {
             MakeALoanUserWindow makeALoanUserWindow = new MakeALoanUserWindow();
             makeALoanUserWindow.Show();
         }
-
         private void TransferBookUserButton_Click(object sender, EventArgs e)
         {
             TransferBookUserWindow transferBookUserWindow = new TransferBookUserWindow();
@@ -62,11 +58,20 @@ namespace InterfaceLibraryApp
         {
             MainlogIn.Close();
         }
-
         private void ReturnBookUserButton_Click(object sender, EventArgs e)
         {
             ReturnBookUserWindows returnBookUserWindows = new ReturnBookUserWindows();
             returnBookUserWindows.Show();
+        }
+        private void DisplayUserLoansButton_Click(object sender, EventArgs e)
+        {
+            DisplayUserLoanWindow displayUserLoanWindow = new DisplayUserLoanWindow();
+            displayUserLoanWindow.Show();
+        }
+        private void CommentUserButton_Click(object sender, EventArgs e)
+        {
+            UserMakeaComment userMakeaComment = new UserMakeaComment();
+            userMakeaComment.Show();
         }
     }
 }
