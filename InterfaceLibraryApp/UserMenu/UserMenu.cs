@@ -23,6 +23,16 @@ namespace InterfaceLibraryApp
             string[] name = GlobalMatrices.usersMatrix[GlobalUserValues.userIndex, 2].Split(' ');
             string userName = name[0];
             WelcomeDisplay.Text = "Hola! " + userName;
+            BackToAdmin.Hide();
+            if (GlobalMatrices.usersMatrix[GlobalUserValues.userIndex, 3] == "Admin")
+            {
+                BackToAdmin.Show();
+            }
+            UserDownButton.Hide();
+            if (GlobalMatrices.usersMatrix[GlobalUserValues.userIndex, 3] == "User")
+            {
+                UserDownButton.Show();
+            }
         }
         private void UserDownButton_Click(object sender, EventArgs e)
         {
@@ -72,6 +82,13 @@ namespace InterfaceLibraryApp
         {
             UserMakeaComment userMakeaComment = new UserMakeaComment();
             userMakeaComment.Show();
+        }
+
+        private void BackToAdmin_Click(object sender, EventArgs e)
+        {
+            AdminMenu adminMenu = new AdminMenu(MainlogIn);
+            adminMenu.Show();
+            this.Close();
         }
     }
 }

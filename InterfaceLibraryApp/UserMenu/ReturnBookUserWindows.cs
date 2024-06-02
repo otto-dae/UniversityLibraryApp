@@ -32,7 +32,12 @@ namespace InterfaceLibraryApp
                 MessageBox.Show("Porfavor ingrese un ID");
                 return;
             }
-            
+            if (IDBookReturnBox.Text.Length != 6)
+            {
+                MessageBox.Show("Porfavor ingrese un ID valido");
+                return;
+            }
+
             bookIndex = LoanFunctions.FindIDBook(GlobalMatrices.loansMatrix, IDBookReturnBox.Text, GlobalUserValues.userIndex);
             if(bookIndex == -1 && counter == 0)
             {

@@ -28,16 +28,19 @@ namespace InterfaceLibraryApp
             int targetUserIndex = 0;
             int targetUserLoanPos = 0;
             int counter = 0;
-
+            if(IdBookTransferUser.Text.Length != 6 || IdTargetTransferUser.Text.Length != 6)
+            {
+                MessageBox.Show("Por favor, ingresa un ID válido");
+                return;
+            }
             if (IdBookTransferUser.Text == "" || IdTargetTransferUser.Text == "")
             {
-                counter++;
+     
                 MessageBox.Show("Por favor, llena todos los campos");
                 return;
             }
             else
             {
-
                 bookIndexOwner = LoanFunctions.FindIDBook(GlobalMatrices.loansMatrix, bookId, GlobalUserValues.userIndex);
                 string dateLoan = GlobalMatrices.loansMatrix[GlobalUserValues.userIndex, bookIndexOwner + 1];
                 dateDifference = LoanFunctions.DateDiference(dateLoan);

@@ -30,19 +30,23 @@ namespace InterfaceLibraryApp
                 MessageBox.Show("Por favor, ingrese un o multiples generos");
                 return;
             }
-
-            for(int i = 0; i < GlobalMatrices.booksMatrix.GetLength(0); i++)
+            else
             {
-                for(int j = 0; j < genres.Length; j++)
+                GenreBookSearchGrid.Show();
+                for (int i = 0; i < GlobalMatrices.booksMatrix.GetLength(0); i++)
                 {
-                    if (GlobalMatrices.booksMatrix[i, 3].ToLower().Trim().Contains(genres[j].ToLower().Trim()))
+                    for (int j = 0; j < genres.Length; j++)
                     {
-                        GenreBookSearchGrid.Rows.Add(GlobalMatrices.booksMatrix[i, 0], GlobalMatrices.booksMatrix[i, 2], GlobalMatrices.booksMatrix[i, 3], GlobalMatrices.booksMatrix[i, 1]);
-                        counter++;
-                        break;
+                        if (GlobalMatrices.booksMatrix[i, 3].ToLower().Trim().Contains(genres[j].ToLower().Trim()))
+                        {
+                            GenreBookSearchGrid.Rows.Add(GlobalMatrices.booksMatrix[i, 0], GlobalMatrices.booksMatrix[i, 2], GlobalMatrices.booksMatrix[i, 3], GlobalMatrices.booksMatrix[i, 1]);
+                            counter++;
+                            break;
+                        }
                     }
                 }
             }
+            
             if(counter == 0)
             {
                 MessageBox.Show("No se encontro ejemplares");

@@ -27,6 +27,12 @@ namespace InterfaceLibraryApp
                 MessageBox.Show("Por favor, ingrese un ID");
                 return;
             }
+            if(idBook.Length != 6)
+            {
+                MessageBox.Show("El ID debe tener 6 caracteres");
+                IdBookTextBox.Clear();
+                return;
+            }
             int idBookIndex = MainMethods.FindID(GlobalMatrices.booksMatrix, idBook);
             if (idBookIndex == -1)
             {

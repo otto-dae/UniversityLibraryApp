@@ -258,13 +258,13 @@
             // 
             // ShowUserMenuButton
             // 
-            ShowUserMenuButton.BackColor = Color.FromArgb(95, 145, 222);
+            ShowUserMenuButton.BackColor = Color.FromArgb(36, 133, 56);
             ShowUserMenuButton.FlatStyle = FlatStyle.Popup;
             ShowUserMenuButton.Location = new Point(12, 245);
             ShowUserMenuButton.Name = "ShowUserMenuButton";
-            ShowUserMenuButton.Size = new Size(134, 24);
+            ShowUserMenuButton.Size = new Size(115, 24);
             ShowUserMenuButton.TabIndex = 18;
-            ShowUserMenuButton.Text = "Mostrar menu usuario";
+            ShowUserMenuButton.Text = "Ir a menu Usuario";
             ShowUserMenuButton.UseVisualStyleBackColor = false;
             ShowUserMenuButton.Click += ShowUserMenuButton_Click;
             // 

@@ -49,6 +49,7 @@
             CommentUserButton = new Button();
             DisplayUserLoansButton = new Button();
             ExitButton = new Button();
+            BackToAdmin = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -304,12 +305,27 @@
             ExitButton.UseVisualStyleBackColor = false;
             ExitButton.Click += ExitButton_Click;
             // 
+            // BackToAdmin
+            // 
+            BackToAdmin.BackColor = Color.FromArgb(36, 133, 56);
+            BackToAdmin.FlatStyle = FlatStyle.Popup;
+            BackToAdmin.Font = new Font("Segoe UI", 9F);
+            BackToAdmin.ForeColor = Color.Black;
+            BackToAdmin.Location = new Point(12, 344);
+            BackToAdmin.Name = "BackToAdmin";
+            BackToAdmin.Size = new Size(106, 24);
+            BackToAdmin.TabIndex = 21;
+            BackToAdmin.Text = "Volver a Admin";
+            BackToAdmin.UseVisualStyleBackColor = false;
+            BackToAdmin.Click += BackToAdmin_Click;
+            // 
             // UserMenu
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(13, 53, 115);
             ClientSize = new Size(456, 474);
+            Controls.Add(BackToAdmin);
             Controls.Add(ExitButton);
             Controls.Add(DisplayUserLoansButton);
             Controls.Add(CommentUserButton);
@@ -364,5 +380,6 @@
         private Button CommentUserButton;
         private Button DisplayUserLoansButton;
         private Button ExitButton;
+        private Button BackToAdmin;
     }
 }

@@ -29,6 +29,11 @@ namespace InterfaceLibraryApp
                 MessageBox.Show("Por favor, ingrese un ID");
                 return;
             }
+            if (InsertIdBookLoanUser.Text.Length != 6)
+            {
+                MessageBox.Show("Por favor, ingrese un ID válido");
+                return;
+            }
 
             if (bookIndex == -1)
             {

@@ -29,15 +29,20 @@ namespace InterfaceLibraryApp
                 MessageBox.Show("Por favor, ingrese un nombre");
                 return;
             }
-
-            for (int i = 0; i < GlobalMatrices.booksMatrix.GetLength(0); i++)
+            else
             {
-                if (GlobalMatrices.booksMatrix[i,2].ToLower().Trim().Contains(nameBook))
+                ShowBooksGrid.Show();
+                for (int i = 0; i < GlobalMatrices.booksMatrix.GetLength(0); i++)
                 {
-                    counter++;
-                    ShowBooksGrid.Rows.Add(GlobalMatrices.booksMatrix[i, 0], GlobalMatrices.booksMatrix[i, 2], GlobalMatrices.booksMatrix[i, 3], GlobalMatrices.booksMatrix[i, 1]);
+                    if (GlobalMatrices.booksMatrix[i, 2].ToLower().Trim().Contains(nameBook))
+                    {
+                        counter++;
+                        ShowBooksGrid.Rows.Add(GlobalMatrices.booksMatrix[i, 0], GlobalMatrices.booksMatrix[i, 2], GlobalMatrices.booksMatrix[i, 3], GlobalMatrices.booksMatrix[i, 1]);
+                    }
                 }
             }
+
+            
             if(counter == 0)
             {
                 MessageBox.Show("No se encontro ejemplares con ese nombre");
