@@ -42,9 +42,9 @@
             Label1.AutoSize = true;
             Label1.Font = new Font("Segoe UI", 10F);
             Label1.ForeColor = Color.White;
-            Label1.Location = new Point(12, 9);
+            Label1.Location = new Point(14, 12);
             Label1.Name = "Label1";
-            Label1.Size = new Size(213, 19);
+            Label1.Size = new Size(267, 23);
             Label1.TabIndex = 0;
             Label1.Text = "Ingrese el ID del libro a modificar:";
             // 
@@ -53,9 +53,9 @@
             CurrentName.AutoSize = true;
             CurrentName.Font = new Font("Segoe UI", 10F);
             CurrentName.ForeColor = Color.White;
-            CurrentName.Location = new Point(12, 38);
+            CurrentName.Location = new Point(14, 51);
             CurrentName.Name = "CurrentName";
-            CurrentName.Size = new Size(102, 19);
+            CurrentName.Size = new Size(128, 23);
             CurrentName.TabIndex = 1;
             CurrentName.Text = "Nombre actual:";
             // 
@@ -64,9 +64,9 @@
             NewNamePrompt.AutoSize = true;
             NewNamePrompt.Font = new Font("Segoe UI", 10F);
             NewNamePrompt.ForeColor = Color.White;
-            NewNamePrompt.Location = new Point(10, 74);
+            NewNamePrompt.Location = new Point(11, 99);
             NewNamePrompt.Name = "NewNamePrompt";
-            NewNamePrompt.Size = new Size(104, 19);
+            NewNamePrompt.Size = new Size(129, 23);
             NewNamePrompt.TabIndex = 2;
             NewNamePrompt.Text = "Nuevo nombre:";
             // 
@@ -74,9 +74,10 @@
             // 
             SearchID.BackColor = Color.FromArgb(95, 145, 222);
             SearchID.FlatStyle = FlatStyle.Popup;
-            SearchID.Location = new Point(369, 7);
+            SearchID.Location = new Point(422, 12);
+            SearchID.Margin = new Padding(3, 4, 3, 4);
             SearchID.Name = "SearchID";
-            SearchID.Size = new Size(60, 27);
+            SearchID.Size = new Size(69, 28);
             SearchID.TabIndex = 3;
             SearchID.Text = "Buscar";
             SearchID.UseVisualStyleBackColor = false;
@@ -86,9 +87,10 @@
             // 
             AcceptChanges.BackColor = Color.FromArgb(95, 145, 222);
             AcceptChanges.FlatStyle = FlatStyle.Popup;
-            AcceptChanges.Location = new Point(195, 110);
+            AcceptChanges.Location = new Point(223, 157);
+            AcceptChanges.Margin = new Padding(3, 4, 3, 4);
             AcceptChanges.Name = "AcceptChanges";
-            AcceptChanges.Size = new Size(71, 27);
+            AcceptChanges.Size = new Size(81, 26);
             AcceptChanges.TabIndex = 4;
             AcceptChanges.Text = "Cambiar";
             AcceptChanges.UseVisualStyleBackColor = false;
@@ -96,24 +98,26 @@
             // 
             // SearchIDTextBox
             // 
-            SearchIDTextBox.Location = new Point(239, 10);
+            SearchIDTextBox.Location = new Point(273, 13);
+            SearchIDTextBox.Margin = new Padding(3, 4, 3, 4);
             SearchIDTextBox.Name = "SearchIDTextBox";
-            SearchIDTextBox.Size = new Size(124, 23);
+            SearchIDTextBox.Size = new Size(141, 27);
             SearchIDTextBox.TabIndex = 5;
             // 
             // NewNameTextBox
             // 
-            NewNameTextBox.Location = new Point(120, 74);
+            NewNameTextBox.Location = new Point(137, 99);
+            NewNameTextBox.Margin = new Padding(3, 4, 3, 4);
             NewNameTextBox.Name = "NewNameTextBox";
-            NewNameTextBox.Size = new Size(338, 23);
+            NewNameTextBox.Size = new Size(386, 27);
             NewNameTextBox.TabIndex = 6;
             // 
             // ModifyNameBookWindow
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(13, 53, 115);
-            ClientSize = new Size(474, 149);
+            ClientSize = new Size(542, 199);
             Controls.Add(NewNameTextBox);
             Controls.Add(SearchIDTextBox);
             Controls.Add(AcceptChanges);
@@ -121,6 +125,7 @@
             Controls.Add(NewNamePrompt);
             Controls.Add(CurrentName);
             Controls.Add(Label1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "ModifyNameBookWindow";
             Text = "ModifyNameBookWindow";
             ResumeLayout(false);

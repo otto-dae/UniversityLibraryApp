@@ -91,9 +91,9 @@
             UserDownButton.FlatStyle = FlatStyle.Popup;
             UserDownButton.Font = new Font("Segoe UI", 9F);
             UserDownButton.ForeColor = Color.Black;
-            UserDownButton.Location = new Point(12, 314);
+            UserDownButton.Location = new Point(13, 308);
             UserDownButton.Name = "UserDownButton";
-            UserDownButton.Size = new Size(53, 24);
+            UserDownButton.Size = new Size(53, 23);
             UserDownButton.TabIndex = 3;
             UserDownButton.Text = "Baja";
             UserDownButton.TextAlign = ContentAlignment.TopCenter;
@@ -115,9 +115,9 @@
             SearchByIdButton.FlatStyle = FlatStyle.Popup;
             SearchByIdButton.Font = new Font("Segoe UI", 9F);
             SearchByIdButton.ForeColor = Color.Black;
-            SearchByIdButton.Location = new Point(231, 40);
+            SearchByIdButton.Location = new Point(223, 40);
             SearchByIdButton.Name = "SearchByIdButton";
-            SearchByIdButton.Size = new Size(47, 24);
+            SearchByIdButton.Size = new Size(47, 23);
             SearchByIdButton.TabIndex = 5;
             SearchByIdButton.Text = "ID";
             SearchByIdButton.UseVisualStyleBackColor = false;
@@ -130,9 +130,9 @@
             SearchByNameButton.Font = new Font("Segoe UI", 8F);
             SearchByNameButton.ForeColor = Color.Black;
             SearchByNameButton.ImageAlign = ContentAlignment.TopCenter;
-            SearchByNameButton.Location = new Point(231, 70);
+            SearchByNameButton.Location = new Point(223, 69);
             SearchByNameButton.Name = "SearchByNameButton";
-            SearchByNameButton.Size = new Size(74, 24);
+            SearchByNameButton.Size = new Size(74, 23);
             SearchByNameButton.TabIndex = 6;
             SearchByNameButton.Text = "Nombre";
             SearchByNameButton.UseVisualStyleBackColor = false;
@@ -144,9 +144,9 @@
             SearchByGenreButton.FlatStyle = FlatStyle.Popup;
             SearchByGenreButton.Font = new Font("Segoe UI", 9F);
             SearchByGenreButton.ForeColor = Color.Black;
-            SearchByGenreButton.Location = new Point(231, 100);
+            SearchByGenreButton.Location = new Point(223, 98);
             SearchByGenreButton.Name = "SearchByGenreButton";
-            SearchByGenreButton.Size = new Size(84, 24);
+            SearchByGenreButton.Size = new Size(84, 23);
             SearchByGenreButton.TabIndex = 7;
             SearchByGenreButton.Text = "Generos";
             SearchByGenreButton.UseVisualStyleBackColor = false;
@@ -167,9 +167,9 @@
             MakeaLoanButton.FlatStyle = FlatStyle.Popup;
             MakeaLoanButton.Font = new Font("Segoe UI", 9F);
             MakeaLoanButton.ForeColor = Color.Black;
-            MakeaLoanButton.Location = new Point(231, 167);
+            MakeaLoanButton.Location = new Point(223, 167);
             MakeaLoanButton.Name = "MakeaLoanButton";
-            MakeaLoanButton.Size = new Size(138, 24);
+            MakeaLoanButton.Size = new Size(138, 22);
             MakeaLoanButton.TabIndex = 9;
             MakeaLoanButton.Text = "Realizar Prestamo";
             MakeaLoanButton.UseVisualStyleBackColor = false;
@@ -181,9 +181,9 @@
             TransferBookUserButton.FlatStyle = FlatStyle.Popup;
             TransferBookUserButton.Font = new Font("Segoe UI", 9F);
             TransferBookUserButton.ForeColor = Color.Black;
-            TransferBookUserButton.Location = new Point(231, 197);
+            TransferBookUserButton.Location = new Point(223, 195);
             TransferBookUserButton.Name = "TransferBookUserButton";
-            TransferBookUserButton.Size = new Size(138, 24);
+            TransferBookUserButton.Size = new Size(138, 22);
             TransferBookUserButton.TabIndex = 10;
             TransferBookUserButton.Text = "Transferir libro ";
             TransferBookUserButton.UseVisualStyleBackColor = false;
@@ -195,9 +195,9 @@
             ReturnBookUserButton.FlatStyle = FlatStyle.Popup;
             ReturnBookUserButton.Font = new Font("Segoe UI", 9F);
             ReturnBookUserButton.ForeColor = Color.Black;
-            ReturnBookUserButton.Location = new Point(231, 227);
+            ReturnBookUserButton.Location = new Point(223, 223);
             ReturnBookUserButton.Name = "ReturnBookUserButton";
-            ReturnBookUserButton.Size = new Size(138, 24);
+            ReturnBookUserButton.Size = new Size(138, 22);
             ReturnBookUserButton.TabIndex = 11;
             ReturnBookUserButton.Text = "Devolver libro";
             ReturnBookUserButton.UseVisualStyleBackColor = false;
@@ -207,7 +207,7 @@
             // 
             CommentPrompt1.AutoSize = true;
             CommentPrompt1.Font = new Font("Segoe UI", 10F);
-            CommentPrompt1.Location = new Point(223, 308);
+            CommentPrompt1.Location = new Point(223, 285);
             CommentPrompt1.Name = "CommentPrompt1";
             CommentPrompt1.Size = new Size(135, 19);
             CommentPrompt1.TabIndex = 12;
@@ -217,7 +217,7 @@
             // 
             CommentPrompt2.AutoSize = true;
             CommentPrompt2.Font = new Font("Segoe UI", 10F);
-            CommentPrompt2.Location = new Point(223, 331);
+            CommentPrompt2.Location = new Point(223, 308);
             CommentPrompt2.Name = "CommentPrompt2";
             CommentPrompt2.Size = new Size(92, 19);
             CommentPrompt2.TabIndex = 13;
@@ -227,7 +227,7 @@
             // 
             CommentPrompt3.AutoSize = true;
             CommentPrompt3.Font = new Font("Segoe UI", 10F);
-            CommentPrompt3.Location = new Point(223, 356);
+            CommentPrompt3.Location = new Point(223, 333);
             CommentPrompt3.Name = "CommentPrompt3";
             CommentPrompt3.Size = new Size(127, 19);
             CommentPrompt3.TabIndex = 14;
@@ -237,7 +237,7 @@
             // 
             CommentPrompt4.AutoSize = true;
             CommentPrompt4.Font = new Font("Segoe UI", 10F);
-            CommentPrompt4.Location = new Point(223, 379);
+            CommentPrompt4.Location = new Point(223, 356);
             CommentPrompt4.Name = "CommentPrompt4";
             CommentPrompt4.Size = new Size(112, 19);
             CommentPrompt4.TabIndex = 15;
@@ -247,7 +247,7 @@
             // 
             CommentPrompt5.AutoSize = true;
             CommentPrompt5.Font = new Font("Segoe UI", 10F);
-            CommentPrompt5.Location = new Point(223, 402);
+            CommentPrompt5.Location = new Point(223, 379);
             CommentPrompt5.Name = "CommentPrompt5";
             CommentPrompt5.Size = new Size(149, 19);
             CommentPrompt5.TabIndex = 16;
@@ -257,7 +257,7 @@
             // 
             CommentPrompt6.AutoSize = true;
             CommentPrompt6.Font = new Font("Segoe UI", 10F);
-            CommentPrompt6.Location = new Point(223, 425);
+            CommentPrompt6.Location = new Point(223, 402);
             CommentPrompt6.Name = "CommentPrompt6";
             CommentPrompt6.Size = new Size(42, 19);
             CommentPrompt6.TabIndex = 17;
@@ -269,9 +269,9 @@
             CommentUserButton.FlatStyle = FlatStyle.Popup;
             CommentUserButton.Font = new Font("Segoe UI", 9F);
             CommentUserButton.ForeColor = Color.Black;
-            CommentUserButton.Location = new Point(223, 447);
+            CommentUserButton.Location = new Point(268, 402);
             CommentUserButton.Name = "CommentUserButton";
-            CommentUserButton.Size = new Size(82, 24);
+            CommentUserButton.Size = new Size(82, 23);
             CommentUserButton.TabIndex = 18;
             CommentUserButton.Text = "Comentar";
             CommentUserButton.UseVisualStyleBackColor = false;
@@ -283,9 +283,9 @@
             DisplayUserLoansButton.FlatStyle = FlatStyle.Popup;
             DisplayUserLoansButton.Font = new Font("Segoe UI", 9F);
             DisplayUserLoansButton.ForeColor = Color.Black;
-            DisplayUserLoansButton.Location = new Point(231, 257);
+            DisplayUserLoansButton.Location = new Point(223, 251);
             DisplayUserLoansButton.Name = "DisplayUserLoansButton";
-            DisplayUserLoansButton.Size = new Size(159, 24);
+            DisplayUserLoansButton.Size = new Size(159, 22);
             DisplayUserLoansButton.TabIndex = 19;
             DisplayUserLoansButton.Text = "Consultar prestamos";
             DisplayUserLoansButton.UseVisualStyleBackColor = false;
@@ -297,9 +297,9 @@
             ExitButton.FlatStyle = FlatStyle.Popup;
             ExitButton.Font = new Font("Segoe UI", 9F);
             ExitButton.ForeColor = Color.Black;
-            ExitButton.Location = new Point(380, 447);
+            ExitButton.Location = new Point(390, 402);
             ExitButton.Name = "ExitButton";
-            ExitButton.Size = new Size(66, 24);
+            ExitButton.Size = new Size(66, 23);
             ExitButton.TabIndex = 20;
             ExitButton.Text = "Salir";
             ExitButton.UseVisualStyleBackColor = false;
@@ -311,9 +311,9 @@
             BackToAdmin.FlatStyle = FlatStyle.Popup;
             BackToAdmin.Font = new Font("Segoe UI", 9F);
             BackToAdmin.ForeColor = Color.Black;
-            BackToAdmin.Location = new Point(12, 344);
+            BackToAdmin.Location = new Point(12, 337);
             BackToAdmin.Name = "BackToAdmin";
-            BackToAdmin.Size = new Size(106, 24);
+            BackToAdmin.Size = new Size(96, 23);
             BackToAdmin.TabIndex = 21;
             BackToAdmin.Text = "Volver a Admin";
             BackToAdmin.UseVisualStyleBackColor = false;
@@ -324,7 +324,7 @@
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(13, 53, 115);
-            ClientSize = new Size(456, 474);
+            ClientSize = new Size(468, 443);
             Controls.Add(BackToAdmin);
             Controls.Add(ExitButton);
             Controls.Add(DisplayUserLoansButton);

@@ -49,7 +49,7 @@
             // 
             // InsertIdBookLoanUser
             // 
-            InsertIdBookLoanUser.Location = new Point(230, 31);
+            InsertIdBookLoanUser.Location = new Point(230, 29);
             InsertIdBookLoanUser.Name = "InsertIdBookLoanUser";
             InsertIdBookLoanUser.Size = new Size(137, 23);
             InsertIdBookLoanUser.TabIndex = 1;
@@ -58,7 +58,7 @@
             // 
             SearchBookForLoanButton.BackColor = Color.FromArgb(95, 145, 222);
             SearchBookForLoanButton.FlatStyle = FlatStyle.Popup;
-            SearchBookForLoanButton.Location = new Point(373, 30);
+            SearchBookForLoanButton.Location = new Point(373, 27);
             SearchBookForLoanButton.Name = "SearchBookForLoanButton";
             SearchBookForLoanButton.Size = new Size(63, 24);
             SearchBookForLoanButton.TabIndex = 2;
@@ -94,7 +94,7 @@
             AcceptButtonLoanUser.FlatStyle = FlatStyle.Popup;
             AcceptButtonLoanUser.Location = new Point(12, 140);
             AcceptButtonLoanUser.Name = "AcceptButtonLoanUser";
-            AcceptButtonLoanUser.Size = new Size(59, 24);
+            AcceptButtonLoanUser.Size = new Size(63, 24);
             AcceptButtonLoanUser.TabIndex = 5;
             AcceptButtonLoanUser.Text = "Aceptar";
             AcceptButtonLoanUser.UseVisualStyleBackColor = false;
@@ -105,7 +105,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(13, 53, 115);
-            ClientSize = new Size(448, 175);
+            ClientSize = new Size(451, 175);
             Controls.Add(AcceptButtonLoanUser);
             Controls.Add(BookNameForLoanUser);
             Controls.Add(NameBookLoanPompt);

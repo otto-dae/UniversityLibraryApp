@@ -60,18 +60,24 @@
             // 
             // UserID
             // 
+            UserID.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
             UserID.HeaderText = "ID de usuario";
             UserID.Name = "UserID";
+            UserID.Width = 101;
             // 
             // Date
             // 
+            Date.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
             Date.HeaderText = "Fecha";
             Date.Name = "Date";
+            Date.Width = 63;
             // 
             // Action
             // 
+            Action.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
             Action.HeaderText = "Accion";
             Action.Name = "Action";
+            Action.Width = 69;
             // 
             // ReadLogsWindow
             // 

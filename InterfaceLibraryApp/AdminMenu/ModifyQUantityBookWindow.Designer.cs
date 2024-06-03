@@ -42,17 +42,18 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 10F);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(12, 9);
+            label1.Location = new Point(14, 12);
             label1.Name = "label1";
-            label1.Size = new Size(257, 19);
+            label1.Size = new Size(321, 23);
             label1.TabIndex = 0;
             label1.Text = "Ingrese ID de libro a cambiar inventario: ";
             // 
             // SearchBookId
             // 
-            SearchBookId.Location = new Point(12, 31);
+            SearchBookId.Location = new Point(14, 41);
+            SearchBookId.Margin = new Padding(3, 4, 3, 4);
             SearchBookId.Name = "SearchBookId";
-            SearchBookId.Size = new Size(160, 23);
+            SearchBookId.Size = new Size(182, 27);
             SearchBookId.TabIndex = 1;
             // 
             // label2
@@ -60,26 +61,28 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 10F);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(12, 106);
+            label2.Location = new Point(14, 141);
             label2.Name = "label2";
-            label2.Size = new Size(256, 19);
+            label2.Size = new Size(321, 23);
             label2.TabIndex = 2;
             label2.Text = "Ingrese la nueva cantidad de ejemplares:";
             // 
             // NewBookQuantity
             // 
-            NewBookQuantity.Location = new Point(12, 128);
+            NewBookQuantity.Location = new Point(14, 171);
+            NewBookQuantity.Margin = new Padding(3, 4, 3, 4);
             NewBookQuantity.Name = "NewBookQuantity";
-            NewBookQuantity.Size = new Size(87, 23);
+            NewBookQuantity.Size = new Size(99, 27);
             NewBookQuantity.TabIndex = 3;
             // 
             // AcceptChangesButton
             // 
             AcceptChangesButton.BackColor = Color.FromArgb(95, 145, 222);
             AcceptChangesButton.FlatStyle = FlatStyle.Popup;
-            AcceptChangesButton.Location = new Point(152, 165);
+            AcceptChangesButton.Location = new Point(240, 224);
+            AcceptChangesButton.Margin = new Padding(3, 4, 3, 4);
             AcceptChangesButton.Name = "AcceptChangesButton";
-            AcceptChangesButton.Size = new Size(59, 23);
+            AcceptChangesButton.Size = new Size(75, 31);
             AcceptChangesButton.TabIndex = 4;
             AcceptChangesButton.Text = "Aceptar";
             AcceptChangesButton.UseVisualStyleBackColor = false;
@@ -90,9 +93,9 @@
             NameBookTextBox.AutoSize = true;
             NameBookTextBox.Font = new Font("Segoe UI", 10F);
             NameBookTextBox.ForeColor = Color.White;
-            NameBookTextBox.Location = new Point(12, 71);
+            NameBookTextBox.Location = new Point(14, 95);
             NameBookTextBox.Name = "NameBookTextBox";
-            NameBookTextBox.Size = new Size(45, 19);
+            NameBookTextBox.Size = new Size(55, 23);
             NameBookTextBox.TabIndex = 5;
             NameBookTextBox.Text = "label3";
             // 
@@ -100,9 +103,10 @@
             // 
             SearchIdBook.BackColor = Color.FromArgb(95, 145, 222);
             SearchIdBook.FlatStyle = FlatStyle.Popup;
-            SearchIdBook.Location = new Point(193, 31);
+            SearchIdBook.Location = new Point(229, 41);
+            SearchIdBook.Margin = new Padding(3, 4, 3, 4);
             SearchIdBook.Name = "SearchIdBook";
-            SearchIdBook.Size = new Size(75, 23);
+            SearchIdBook.Size = new Size(65, 27);
             SearchIdBook.TabIndex = 6;
             SearchIdBook.Text = "Buscar";
             SearchIdBook.UseVisualStyleBackColor = false;
@@ -110,10 +114,10 @@
             // 
             // ModifyQUantityBookWindow
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(13, 53, 115);
-            ClientSize = new Size(488, 201);
+            ClientSize = new Size(558, 268);
             Controls.Add(SearchIdBook);
             Controls.Add(NameBookTextBox);
             Controls.Add(AcceptChangesButton);
@@ -121,6 +125,7 @@
             Controls.Add(label2);
             Controls.Add(SearchBookId);
             Controls.Add(label1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "ModifyQUantityBookWindow";
             Text = "ModifyQUantityBookWindow";
             ResumeLayout(false);

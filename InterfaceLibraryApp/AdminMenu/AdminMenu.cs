@@ -102,5 +102,17 @@ namespace InterfaceLibraryApp
             readLogsWindow.Show();
 
         }
+
+        private void ReadUsers_Click(object sender, EventArgs e)
+        {
+            ReadUsersWindow readUsersWindow = new ReadUsersWindow();
+            readUsersWindow.Show();
+        }
+
+        private void ReadBooks_Click(object sender, EventArgs e)
+        {
+            ReadBooksWindow readBooksWindow = new ReadBooksWindow();
+            readBooksWindow.Show();
+        }
     }
 }

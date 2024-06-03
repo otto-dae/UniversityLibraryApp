@@ -25,7 +25,7 @@ namespace InterfaceLibraryApp
             string[] genres = genre.Split(',');
             GenreBookSearchGrid.Rows.Clear();
             int counter = 0;
-            if(genre == "")
+            if (genre == "")
             {
                 MessageBox.Show("Por favor, ingrese un o multiples generos");
                 return;
@@ -47,8 +47,8 @@ namespace InterfaceLibraryApp
                 }
                 MainMethods.WriteToLogs("Busqueda de libros por genero");
             }
-            
-            if(counter == 0)
+
+            if (counter == 0)
             {
                 MessageBox.Show("No se encontro ejemplares");
                 return;

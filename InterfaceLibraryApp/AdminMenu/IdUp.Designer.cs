@@ -38,26 +38,28 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 10F);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(2, 9);
+            label1.Location = new Point(2, 12);
             label1.Name = "label1";
-            label1.Size = new Size(169, 19);
+            label1.Size = new Size(211, 23);
             label1.TabIndex = 0;
             label1.Text = "Ingrese el ID a dar de alta:";
             // 
             // IdUPTextBox
             // 
-            IdUPTextBox.Location = new Point(177, 8);
+            IdUPTextBox.Location = new Point(219, 8);
+            IdUPTextBox.Margin = new Padding(3, 4, 3, 4);
             IdUPTextBox.Name = "IdUPTextBox";
-            IdUPTextBox.Size = new Size(100, 23);
+            IdUPTextBox.Size = new Size(114, 27);
             IdUPTextBox.TabIndex = 1;
             // 
             // AcceptButton
             // 
             AcceptButton.BackColor = Color.FromArgb(95, 145, 222);
             AcceptButton.FlatStyle = FlatStyle.Popup;
-            AcceptButton.Location = new Point(115, 38);
+            AcceptButton.Location = new Point(131, 51);
+            AcceptButton.Margin = new Padding(3, 4, 3, 4);
             AcceptButton.Name = "AcceptButton";
-            AcceptButton.Size = new Size(56, 23);
+            AcceptButton.Size = new Size(82, 31);
             AcceptButton.TabIndex = 2;
             AcceptButton.Text = "Aceptar";
             AcceptButton.UseVisualStyleBackColor = false;
@@ -65,13 +67,14 @@
             // 
             // IdUp
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(13, 53, 115);
-            ClientSize = new Size(294, 71);
+            ClientSize = new Size(353, 95);
             Controls.Add(AcceptButton);
             Controls.Add(IdUPTextBox);
             Controls.Add(label1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "IdUp";
             Text = "IdUp";
             ResumeLayout(false);

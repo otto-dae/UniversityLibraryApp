@@ -37,14 +37,15 @@ namespace InterfaceLibraryApp
                     if (GlobalMatrices.booksMatrix[i, 2].ToLower().Trim().Contains(nameBook))
                     {
                         counter++;
-                        MainMethods.WriteToLogs($"Usuario {GlobalUserValues.ID} busco libros por nombre");
                         ShowBooksGrid.Rows.Add(GlobalMatrices.booksMatrix[i, 0], GlobalMatrices.booksMatrix[i, 2], GlobalMatrices.booksMatrix[i, 3], GlobalMatrices.booksMatrix[i, 1]);
                     }
                 }
             }
+            MainMethods.WriteToLogs($"Usuario {GlobalUserValues.ID} busco libros por nombre");
 
-            
-            if(counter == 0)
+
+
+            if (counter == 0)
             {
                 MessageBox.Show("No se encontro ejemplares con ese nombre");
             }

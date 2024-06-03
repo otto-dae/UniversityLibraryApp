@@ -31,20 +31,21 @@
             label1 = new Label();
             GenreBookTextBox = new TextBox();
             SearchGenreButton = new Button();
-            GenreBookSearchGrid = new DataGridView();
-            IDGenre = new DataGridViewTextBoxColumn();
-            NameGenre = new DataGridViewTextBoxColumn();
-            GenreGenre = new DataGridViewTextBoxColumn();
-            QuiantityGenres = new DataGridViewTextBoxColumn();
             label2 = new Label();
+            GenreBookSearchGrid = new DataGridView();
+            BookId = new DataGridViewTextBoxColumn();
+            NameBook = new DataGridViewTextBoxColumn();
+            GenresBook = new DataGridViewTextBoxColumn();
+            QuantityBook = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)GenreBookSearchGrid).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 10F);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(12, 18);
+            label1.Location = new Point(12, 16);
             label1.Name = "label1";
             label1.Size = new Size(170, 19);
             label1.TabIndex = 0;
@@ -52,9 +53,9 @@
             // 
             // GenreBookTextBox
             // 
-            GenreBookTextBox.Location = new Point(188, 18);
+            GenreBookTextBox.Location = new Point(188, 16);
             GenreBookTextBox.Name = "GenreBookTextBox";
-            GenreBookTextBox.Size = new Size(347, 25);
+            GenreBookTextBox.Size = new Size(347, 23);
             GenreBookTextBox.TabIndex = 1;
             // 
             // SearchGenreButton
@@ -62,80 +63,83 @@
             SearchGenreButton.BackColor = Color.FromArgb(95, 145, 222);
             SearchGenreButton.FlatStyle = FlatStyle.Popup;
             SearchGenreButton.ForeColor = Color.Black;
-            SearchGenreButton.Location = new Point(551, 18);
+            SearchGenreButton.Location = new Point(541, 16);
             SearchGenreButton.Name = "SearchGenreButton";
-            SearchGenreButton.Size = new Size(70, 25);
+            SearchGenreButton.Size = new Size(59, 22);
             SearchGenreButton.TabIndex = 2;
             SearchGenreButton.Text = "Buscar";
             SearchGenreButton.UseVisualStyleBackColor = false;
             SearchGenreButton.Click += SearchGenreButton_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 10F);
+            label2.ForeColor = Color.FromArgb(128, 128, 255);
+            label2.Location = new Point(185, 41);
+            label2.Name = "label2";
+            label2.Size = new Size(350, 19);
+            label2.TabIndex = 4;
+            label2.Text = "En caso de ingresar multiples generos separar por coma";
             // 
             // GenreBookSearchGrid
             // 
             GenreBookSearchGrid.BackgroundColor = Color.FromArgb(13, 53, 115);
             GenreBookSearchGrid.BorderStyle = BorderStyle.None;
             GenreBookSearchGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            GenreBookSearchGrid.Columns.AddRange(new DataGridViewColumn[] { IDGenre, NameGenre, GenreGenre, QuiantityGenres });
-            GenreBookSearchGrid.Location = new Point(12, 105);
+            GenreBookSearchGrid.Columns.AddRange(new DataGridViewColumn[] { BookId, NameBook, GenresBook, QuantityBook });
+            GenreBookSearchGrid.Location = new Point(12, 74);
+            GenreBookSearchGrid.Margin = new Padding(3, 2, 3, 2);
             GenreBookSearchGrid.Name = "GenreBookSearchGrid";
             GenreBookSearchGrid.RowHeadersWidth = 51;
-            GenreBookSearchGrid.Size = new Size(609, 368);
-            GenreBookSearchGrid.TabIndex = 3;
+            GenreBookSearchGrid.Size = new Size(696, 234);
+            GenreBookSearchGrid.TabIndex = 5;
             // 
-            // IDGenre
+            // BookId
             // 
-            IDGenre.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
-            IDGenre.HeaderText = "ID";
-            IDGenre.MinimumWidth = 6;
-            IDGenre.Name = "IDGenre";
-            IDGenre.Width = 48;
+            BookId.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+            BookId.HeaderText = "ID";
+            BookId.MinimumWidth = 6;
+            BookId.Name = "BookId";
+            BookId.Resizable = DataGridViewTriState.True;
+            BookId.Width = 43;
             // 
-            // NameGenre
+            // NameBook
             // 
-            NameGenre.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
-            NameGenre.HeaderText = "Nombre";
-            NameGenre.MinimumWidth = 6;
-            NameGenre.Name = "NameGenre";
-            NameGenre.Width = 84;
+            NameBook.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+            NameBook.HeaderText = "Nombre";
+            NameBook.MinimumWidth = 6;
+            NameBook.Name = "NameBook";
+            NameBook.Width = 76;
             // 
-            // GenreGenre
+            // GenresBook
             // 
-            GenreGenre.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
-            GenreGenre.HeaderText = "Generos";
-            GenreGenre.MinimumWidth = 6;
-            GenreGenre.Name = "GenreGenre";
-            GenreGenre.Width = 85;
+            GenresBook.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+            GenresBook.HeaderText = "Generos";
+            GenresBook.MinimumWidth = 6;
+            GenresBook.Name = "GenresBook";
+            GenresBook.Width = 75;
             // 
-            // QuiantityGenres
+            // QuantityBook
             // 
-            QuiantityGenres.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
-            QuiantityGenres.HeaderText = "Disponibles";
-            QuiantityGenres.MinimumWidth = 6;
-            QuiantityGenres.Name = "QuiantityGenres";
-            QuiantityGenres.Width = 104;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.ForeColor = Color.FromArgb(128, 128, 255);
-            label2.Location = new Point(185, 46);
-            label2.Name = "label2";
-            label2.Size = new Size(350, 19);
-            label2.TabIndex = 4;
-            label2.Text = "En caso de ingresar multiples generos separar por coma";
+            QuantityBook.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+            QuantityBook.HeaderText = "Disponibles";
+            QuantityBook.MinimumWidth = 6;
+            QuantityBook.Name = "QuantityBook";
+            QuantityBook.Width = 93;
             // 
             // SearchBookGenreWindows
             // 
-            AutoScaleDimensions = new SizeF(7F, 17F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(13, 53, 115);
-            ClientSize = new Size(645, 493);
-            Controls.Add(label2);
+            ClientSize = new Size(730, 401);
             Controls.Add(GenreBookSearchGrid);
+            Controls.Add(label2);
             Controls.Add(SearchGenreButton);
             Controls.Add(GenreBookTextBox);
             Controls.Add(label1);
-            Font = new Font("Segoe UI", 10F);
+            Font = new Font("Segoe UI", 9F);
             ForeColor = Color.Black;
             Name = "SearchBookGenreWindows";
             Text = "SearchBookGenreWindows";
@@ -149,11 +153,11 @@
         private Label label1;
         private TextBox GenreBookTextBox;
         private Button SearchGenreButton;
-        private DataGridView GenreBookSearchGrid;
-        private DataGridViewTextBoxColumn IDGenre;
-        private DataGridViewTextBoxColumn NameGenre;
-        private DataGridViewTextBoxColumn GenreGenre;
-        private DataGridViewTextBoxColumn QuiantityGenres;
         private Label label2;
+        private DataGridView GenreBookSearchGrid;
+        private DataGridViewTextBoxColumn BookId;
+        private DataGridViewTextBoxColumn NameBook;
+        private DataGridViewTextBoxColumn GenresBook;
+        private DataGridViewTextBoxColumn QuantityBook;
     }
 }

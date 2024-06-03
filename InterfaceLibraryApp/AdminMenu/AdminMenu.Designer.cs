@@ -47,6 +47,8 @@
             ChangeGenreButton = new Button();
             ShowUserMenuButton = new Button();
             ReadBitacora = new Button();
+            ReadUsers = new Button();
+            ReadBooks = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -89,7 +91,7 @@
             UserRegisterAdminButton.Location = new Point(220, 26);
             UserRegisterAdminButton.Margin = new Padding(3, 2, 3, 2);
             UserRegisterAdminButton.Name = "UserRegisterAdminButton";
-            UserRegisterAdminButton.Size = new Size(126, 22);
+            UserRegisterAdminButton.Size = new Size(132, 22);
             UserRegisterAdminButton.TabIndex = 4;
             UserRegisterAdminButton.Text = "Dar de alta a usuario";
             UserRegisterAdminButton.UseVisualStyleBackColor = false;
@@ -102,7 +104,7 @@
             DeactivateUserAdminButton.Location = new Point(220, 53);
             DeactivateUserAdminButton.Margin = new Padding(3, 2, 3, 2);
             DeactivateUserAdminButton.Name = "DeactivateUserAdminButton";
-            DeactivateUserAdminButton.Size = new Size(126, 22);
+            DeactivateUserAdminButton.Size = new Size(132, 22);
             DeactivateUserAdminButton.TabIndex = 5;
             DeactivateUserAdminButton.Text = "Dar de baja a usuario";
             DeactivateUserAdminButton.UseVisualStyleBackColor = false;
@@ -115,7 +117,7 @@
             ChangePrivilagesAdminButton.Location = new Point(220, 80);
             ChangePrivilagesAdminButton.Margin = new Padding(3, 2, 3, 2);
             ChangePrivilagesAdminButton.Name = "ChangePrivilagesAdminButton";
-            ChangePrivilagesAdminButton.Size = new Size(117, 23);
+            ChangePrivilagesAdminButton.Size = new Size(132, 23);
             ChangePrivilagesAdminButton.TabIndex = 6;
             ChangePrivilagesAdminButton.Text = "Cambiar privilegios";
             ChangePrivilagesAdminButton.UseVisualStyleBackColor = false;
@@ -128,7 +130,7 @@
             ModifyNameUserAdminButton.Location = new Point(220, 107);
             ModifyNameUserAdminButton.Margin = new Padding(3, 2, 3, 2);
             ModifyNameUserAdminButton.Name = "ModifyNameUserAdminButton";
-            ModifyNameUserAdminButton.Size = new Size(113, 22);
+            ModifyNameUserAdminButton.Size = new Size(132, 22);
             ModifyNameUserAdminButton.TabIndex = 7;
             ModifyNameUserAdminButton.Text = "Modificar nombre";
             ModifyNameUserAdminButton.UseVisualStyleBackColor = false;
@@ -165,7 +167,7 @@
             UnregisterBookAdminButton.Location = new Point(220, 219);
             UnregisterBookAdminButton.Margin = new Padding(3, 2, 3, 2);
             UnregisterBookAdminButton.Name = "UnregisterBookAdminButton";
-            UnregisterBookAdminButton.Size = new Size(76, 22);
+            UnregisterBookAdminButton.Size = new Size(85, 22);
             UnregisterBookAdminButton.TabIndex = 10;
             UnregisterBookAdminButton.Text = "Dar de baja";
             UnregisterBookAdminButton.UseVisualStyleBackColor = false;
@@ -178,7 +180,7 @@
             ModifyNameBookAdminButton.Location = new Point(220, 245);
             ModifyNameBookAdminButton.Margin = new Padding(3, 2, 3, 2);
             ModifyNameBookAdminButton.Name = "ModifyNameBookAdminButton";
-            ModifyNameBookAdminButton.Size = new Size(112, 22);
+            ModifyNameBookAdminButton.Size = new Size(132, 22);
             ModifyNameBookAdminButton.TabIndex = 11;
             ModifyNameBookAdminButton.Text = "Modificar nombre";
             ModifyNameBookAdminButton.UseVisualStyleBackColor = false;
@@ -191,7 +193,7 @@
             ModifyQuantityBookAdminButton.Location = new Point(220, 301);
             ModifyQuantityBookAdminButton.Margin = new Padding(3, 2, 3, 2);
             ModifyQuantityBookAdminButton.Name = "ModifyQuantityBookAdminButton";
-            ModifyQuantityBookAdminButton.Size = new Size(115, 22);
+            ModifyQuantityBookAdminButton.Size = new Size(132, 22);
             ModifyQuantityBookAdminButton.TabIndex = 12;
             ModifyQuantityBookAdminButton.Text = "Modificar cantidad";
             ModifyQuantityBookAdminButton.UseVisualStyleBackColor = false;
@@ -201,7 +203,7 @@
             // 
             ReadCommentsAdminButton.BackColor = Color.FromArgb(95, 145, 222);
             ReadCommentsAdminButton.FlatStyle = FlatStyle.Popup;
-            ReadCommentsAdminButton.Location = new Point(12, 274);
+            ReadCommentsAdminButton.Location = new Point(10, 353);
             ReadCommentsAdminButton.Margin = new Padding(3, 2, 3, 2);
             ReadCommentsAdminButton.Name = "ReadCommentsAdminButton";
             ReadCommentsAdminButton.Size = new Size(115, 22);
@@ -214,10 +216,10 @@
             // 
             ReadLoansAdminButton.BackColor = Color.FromArgb(95, 145, 222);
             ReadLoansAdminButton.FlatStyle = FlatStyle.Popup;
-            ReadLoansAdminButton.Location = new Point(12, 300);
+            ReadLoansAdminButton.Location = new Point(10, 327);
             ReadLoansAdminButton.Margin = new Padding(3, 2, 3, 2);
             ReadLoansAdminButton.Name = "ReadLoansAdminButton";
-            ReadLoansAdminButton.Size = new Size(149, 22);
+            ReadLoansAdminButton.Size = new Size(168, 22);
             ReadLoansAdminButton.TabIndex = 14;
             ReadLoansAdminButton.Text = "Leer prestamo de usuario";
             ReadLoansAdminButton.UseVisualStyleBackColor = false;
@@ -229,7 +231,7 @@
             ReUpbookButton.FlatStyle = FlatStyle.Popup;
             ReUpbookButton.Location = new Point(220, 192);
             ReUpbookButton.Name = "ReUpbookButton";
-            ReUpbookButton.Size = new Size(76, 22);
+            ReUpbookButton.Size = new Size(85, 22);
             ReUpbookButton.TabIndex = 15;
             ReUpbookButton.Text = "Dar de alta ";
             ReUpbookButton.UseVisualStyleBackColor = false;
@@ -239,7 +241,7 @@
             // 
             ExitButton.BackColor = Color.FromArgb(212, 38, 48);
             ExitButton.FlatStyle = FlatStyle.Popup;
-            ExitButton.Location = new Point(370, 301);
+            ExitButton.Location = new Point(370, 378);
             ExitButton.Name = "ExitButton";
             ExitButton.Size = new Size(59, 22);
             ExitButton.TabIndex = 16;
@@ -253,7 +255,7 @@
             ChangeGenreButton.FlatStyle = FlatStyle.Popup;
             ChangeGenreButton.Location = new Point(220, 274);
             ChangeGenreButton.Name = "ChangeGenreButton";
-            ChangeGenreButton.Size = new Size(113, 22);
+            ChangeGenreButton.Size = new Size(132, 22);
             ChangeGenreButton.TabIndex = 17;
             ChangeGenreButton.Text = "Modificar Generos";
             ChangeGenreButton.UseVisualStyleBackColor = false;
@@ -263,9 +265,9 @@
             // 
             ShowUserMenuButton.BackColor = Color.FromArgb(36, 133, 56);
             ShowUserMenuButton.FlatStyle = FlatStyle.Popup;
-            ShowUserMenuButton.Location = new Point(12, 245);
+            ShowUserMenuButton.Location = new Point(10, 245);
             ShowUserMenuButton.Name = "ShowUserMenuButton";
-            ShowUserMenuButton.Size = new Size(115, 24);
+            ShowUserMenuButton.Size = new Size(127, 24);
             ShowUserMenuButton.TabIndex = 18;
             ShowUserMenuButton.Text = "Ir a menu Usuario";
             ShowUserMenuButton.UseVisualStyleBackColor = false;
@@ -275,20 +277,46 @@
             // 
             ReadBitacora.BackColor = Color.FromArgb(95, 145, 222);
             ReadBitacora.FlatStyle = FlatStyle.Popup;
-            ReadBitacora.Location = new Point(12, 327);
+            ReadBitacora.Location = new Point(10, 380);
             ReadBitacora.Name = "ReadBitacora";
-            ReadBitacora.Size = new Size(84, 22);
+            ReadBitacora.Size = new Size(115, 22);
             ReadBitacora.TabIndex = 19;
             ReadBitacora.Text = "Leer Bitacora";
             ReadBitacora.UseVisualStyleBackColor = false;
             ReadBitacora.Click += ReadBitacora_Click;
+            // 
+            // ReadUsers
+            // 
+            ReadUsers.BackColor = Color.FromArgb(95, 145, 222);
+            ReadUsers.FlatStyle = FlatStyle.Popup;
+            ReadUsers.Location = new Point(10, 275);
+            ReadUsers.Name = "ReadUsers";
+            ReadUsers.Size = new Size(94, 22);
+            ReadUsers.TabIndex = 20;
+            ReadUsers.Text = "Leer usuarios";
+            ReadUsers.UseVisualStyleBackColor = false;
+            ReadUsers.Click += ReadUsers_Click;
+            // 
+            // ReadBooks
+            // 
+            ReadBooks.BackColor = Color.FromArgb(95, 145, 222);
+            ReadBooks.FlatStyle = FlatStyle.Popup;
+            ReadBooks.Location = new Point(10, 300);
+            ReadBooks.Name = "ReadBooks";
+            ReadBooks.Size = new Size(75, 22);
+            ReadBooks.TabIndex = 21;
+            ReadBooks.Text = "Leer libros";
+            ReadBooks.UseVisualStyleBackColor = false;
+            ReadBooks.Click += ReadBooks_Click;
             // 
             // AdminMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(13, 53, 115);
-            ClientSize = new Size(441, 361);
+            ClientSize = new Size(441, 412);
+            Controls.Add(ReadBooks);
+            Controls.Add(ReadUsers);
             Controls.Add(ReadBitacora);
             Controls.Add(ShowUserMenuButton);
             Controls.Add(ChangeGenreButton);
@@ -337,5 +365,7 @@
         private Button ChangeGenreButton;
         private Button ShowUserMenuButton;
         private Button ReadBitacora;
+        private Button ReadUsers;
+        private Button ReadBooks;
     }
 }

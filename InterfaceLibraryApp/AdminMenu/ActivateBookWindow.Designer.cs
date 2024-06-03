@@ -37,9 +37,10 @@
             // 
             AcceptButton.BackColor = Color.FromArgb(95, 145, 222);
             AcceptButton.FlatStyle = FlatStyle.Popup;
-            AcceptButton.Location = new Point(123, 53);
+            AcceptButton.Location = new Point(141, 71);
+            AcceptButton.Margin = new Padding(3, 4, 3, 4);
             AcceptButton.Name = "AcceptButton";
-            AcceptButton.Size = new Size(60, 23);
+            AcceptButton.Size = new Size(69, 31);
             AcceptButton.TabIndex = 5;
             AcceptButton.Text = "Aceptar";
             AcceptButton.UseVisualStyleBackColor = false;
@@ -47,9 +48,10 @@
             // 
             // SearchIdTextBox
             // 
-            SearchIdTextBox.Location = new Point(177, 15);
+            SearchIdTextBox.Location = new Point(215, 19);
+            SearchIdTextBox.Margin = new Padding(3, 4, 3, 4);
             SearchIdTextBox.Name = "SearchIdTextBox";
-            SearchIdTextBox.Size = new Size(116, 23);
+            SearchIdTextBox.Size = new Size(132, 27);
             SearchIdTextBox.TabIndex = 4;
             // 
             // label1
@@ -57,21 +59,22 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 10F);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(12, 15);
+            label1.Location = new Point(14, 20);
             label1.Name = "label1";
-            label1.Size = new Size(156, 19);
+            label1.Size = new Size(195, 23);
             label1.TabIndex = 3;
             label1.Text = "ID de libro a dar de alta:";
             // 
             // ActivateBookWindow
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(13, 53, 115);
-            ClientSize = new Size(304, 91);
+            ClientSize = new Size(359, 121);
             Controls.Add(AcceptButton);
             Controls.Add(SearchIdTextBox);
             Controls.Add(label1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "ActivateBookWindow";
             Text = "ActivateBookWindow";
             ResumeLayout(false);

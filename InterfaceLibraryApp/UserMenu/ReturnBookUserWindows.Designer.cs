@@ -38,26 +38,28 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 10F);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(12, 9);
+            label1.Location = new Point(14, 12);
             label1.Name = "label1";
-            label1.Size = new Size(209, 19);
+            label1.Size = new Size(260, 23);
             label1.TabIndex = 0;
             label1.Text = "Ingrese el ID del libro a devolver:";
             // 
             // IDBookReturnBox
             // 
-            IDBookReturnBox.Location = new Point(227, 9);
+            IDBookReturnBox.Location = new Point(280, 12);
+            IDBookReturnBox.Margin = new Padding(3, 4, 3, 4);
             IDBookReturnBox.Name = "IDBookReturnBox";
-            IDBookReturnBox.Size = new Size(121, 23);
+            IDBookReturnBox.Size = new Size(138, 27);
             IDBookReturnBox.TabIndex = 1;
             // 
             // ReturnButton
             // 
             ReturnButton.BackColor = Color.FromArgb(95, 145, 222);
             ReturnButton.FlatStyle = FlatStyle.Popup;
-            ReturnButton.Location = new Point(155, 70);
+            ReturnButton.Location = new Point(177, 93);
+            ReturnButton.Margin = new Padding(3, 4, 3, 4);
             ReturnButton.Name = "ReturnButton";
-            ReturnButton.Size = new Size(75, 23);
+            ReturnButton.Size = new Size(86, 31);
             ReturnButton.TabIndex = 2;
             ReturnButton.Text = "Devolver";
             ReturnButton.UseVisualStyleBackColor = false;
@@ -65,13 +67,14 @@
             // 
             // ReturnBookUserWindows
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(13, 53, 115);
-            ClientSize = new Size(389, 106);
+            ClientSize = new Size(445, 141);
             Controls.Add(ReturnButton);
             Controls.Add(IDBookReturnBox);
             Controls.Add(label1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "ReturnBookUserWindows";
             Text = "ReturnBookUserWindows";
             ResumeLayout(false);

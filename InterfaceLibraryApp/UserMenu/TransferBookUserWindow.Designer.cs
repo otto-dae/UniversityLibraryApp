@@ -40,26 +40,28 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 10F);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(12, 37);
+            label1.Location = new Point(14, 49);
             label1.Name = "label1";
-            label1.Size = new Size(205, 19);
+            label1.Size = new Size(255, 23);
             label1.TabIndex = 0;
             label1.Text = "Ingrse el ID del libro a transferir:";
             // 
             // IdBookTransferUser
             // 
-            IdBookTransferUser.Location = new Point(223, 37);
+            IdBookTransferUser.Location = new Point(275, 49);
+            IdBookTransferUser.Margin = new Padding(3, 4, 3, 4);
             IdBookTransferUser.Name = "IdBookTransferUser";
-            IdBookTransferUser.Size = new Size(110, 23);
+            IdBookTransferUser.Size = new Size(125, 27);
             IdBookTransferUser.TabIndex = 1;
             // 
             // button1
             // 
             button1.BackColor = Color.FromArgb(95, 145, 222);
             button1.FlatStyle = FlatStyle.Popup;
-            button1.Location = new Point(132, 131);
+            button1.Location = new Point(183, 178);
+            button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
-            button1.Size = new Size(60, 24);
+            button1.Size = new Size(69, 32);
             button1.TabIndex = 2;
             button1.Text = "Aceptar";
             button1.UseVisualStyleBackColor = false;
@@ -70,30 +72,32 @@
             InsertIdTargetPrompt.AutoSize = true;
             InsertIdTargetPrompt.Font = new Font("Segoe UI", 10F);
             InsertIdTargetPrompt.ForeColor = Color.White;
-            InsertIdTargetPrompt.Location = new Point(12, 73);
+            InsertIdTargetPrompt.Location = new Point(14, 97);
             InsertIdTargetPrompt.Name = "InsertIdTargetPrompt";
-            InsertIdTargetPrompt.Size = new Size(191, 19);
+            InsertIdTargetPrompt.Size = new Size(238, 23);
             InsertIdTargetPrompt.TabIndex = 3;
             InsertIdTargetPrompt.Text = "Ingrese el ID del destinatario: ";
             // 
             // IdTargetTransferUser
             // 
-            IdTargetTransferUser.Location = new Point(223, 73);
+            IdTargetTransferUser.Location = new Point(255, 97);
+            IdTargetTransferUser.Margin = new Padding(3, 4, 3, 4);
             IdTargetTransferUser.Name = "IdTargetTransferUser";
-            IdTargetTransferUser.Size = new Size(110, 23);
+            IdTargetTransferUser.Size = new Size(125, 27);
             IdTargetTransferUser.TabIndex = 4;
             // 
             // TransferBookUserWindow
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(13, 53, 115);
-            ClientSize = new Size(344, 167);
+            ClientSize = new Size(445, 223);
             Controls.Add(IdTargetTransferUser);
             Controls.Add(InsertIdTargetPrompt);
             Controls.Add(button1);
             Controls.Add(IdBookTransferUser);
             Controls.Add(label1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "TransferBookUserWindow";
             Text = "TransferBookUserWindow";
             ResumeLayout(false);
