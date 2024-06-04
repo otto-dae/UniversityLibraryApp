@@ -60,7 +60,8 @@ namespace InterfaceLibraryApp
             else if (counter == 0)
             {
                 MessageBox.Show($"El libro se encuentra atrasado por {differenceDay} dias, porfavor pague la multa");
-                PaymentReturnUser paymentReturnUser = new PaymentReturnUser(this,bookIDPos, bookIndex);
+                int debt = differenceDay * 10;
+                PaymentReturnUser paymentReturnUser = new PaymentReturnUser(this, debt);
                 paymentReturnUser.Show();
             }
 

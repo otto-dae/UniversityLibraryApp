@@ -13,11 +13,12 @@ namespace InterfaceLibraryApp
     public partial class PaymentReturnUser : Form
     {
         Form ReturnBook;
-        public PaymentReturnUser(Form returnBookWindow, int bookIdPos, int bookIndex)
+        public PaymentReturnUser(Form returnBookWindow, int debt)
         {
             InitializeComponent();
             CVVTextBox.PasswordChar = '*';
             ReturnBook = returnBookWindow;
+            PaymountAmountPrompt.Text = $"El monto a pagar es de: {debt}";
         }
 
         private void PayConfirmButton_Click(object sender, EventArgs e)
