@@ -46,7 +46,7 @@ namespace InterfaceLibraryApp
                 dateDifference = LoanFunctions.DateDiference(dateLoan);
 
                 targetUserIndex = MainMethods.FindID(GlobalMatrices.loansMatrix, targetUserId);
-                targetUserLoanPos = MainMethods.LoanFinder(targetUserIndex);
+                targetUserLoanPos = LoanFunctions.LoanChecker(targetUserIndex);
             }
 
            
@@ -68,7 +68,7 @@ namespace InterfaceLibraryApp
                 MessageBox.Show("El usuario al que deseas transferir el libro, no existe");
                 Close();
             }
-            if(targetUserLoanPos == -1)
+            if(targetUserLoanPos == 0)
             {
                 counter++;
                 MessageBox.Show("El usuario al que deseas transferir el libro tiene el límite de préstamos alcanzado");

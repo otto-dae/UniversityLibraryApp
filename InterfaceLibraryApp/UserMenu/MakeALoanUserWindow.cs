@@ -66,9 +66,15 @@ namespace InterfaceLibraryApp
                 counter++;
                 Close();
             }
-            if(counter == 0)
+            int loanIndex = LoanFunctions.LoanChecker(GlobalUserValues.userIndex);
+            if(loanIndex == 0)
             {
-                int loanIndex = LoanFunctions.LoanChecker(GlobalUserValues.userIndex);
+                MessageBox.Show("No puede realizar más préstamos");
+                counter++;
+                Close();
+            }
+            if (counter == 0)
+            {
                 GlobalMatrices.booksMatrix[bookIndex, 1] = Convert.ToString(Convert.ToInt32(GlobalMatrices.booksMatrix[bookIndex, 1]) - 1);
                 GlobalMatrices.loansMatrix[GlobalUserValues.userIndex, loanIndex] = InsertIdBookLoanUser.Text;
                 GlobalMatrices.loansMatrix[GlobalUserValues.userIndex, loanIndex + 1] = LoanFunctions.LoanDateGenerator();
