@@ -105,5 +105,16 @@ namespace InterfaceLibraryApp
             bitacora.WriteLine(newAction);
             bitacora.Close();
         }
+        public static int LoanVerf(int userIndex)
+        {
+            for (int i = 1; i < GlobalMatrices.loansMatrix.GetLength(1); i += 2)
+            {
+                if (GlobalMatrices.loansMatrix[userIndex, i] != "ID")
+                {
+                    return -1;
+                }
+            }
+            return 0;
+        }
     }
 }

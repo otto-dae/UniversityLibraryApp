@@ -18,7 +18,7 @@ namespace InterfaceLibraryApp
             InitializeComponent();
             CVVTextBox.PasswordChar = '*';
             ReturnBook = returnBookWindow;
-            PaymountAmountPrompt.Text = $"El monto a pagar es de: {debt}";
+            PaymountAmountPrompt.Text = $"El monto a pagar es de: {debt} pesos";
         }
 
         private void PayConfirmButton_Click(object sender, EventArgs e)

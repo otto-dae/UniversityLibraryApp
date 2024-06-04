@@ -56,10 +56,15 @@ namespace InterfaceLibraryApp
             {
                 return 0;
             }
-            if (MainMethods.LoanFinder(GlobalUserValues.userIndex) != -1)
+            if (MainMethods.LoanVerf(GlobalUserValues.userIndex) == -1)
             {
                 return -1;
             }
+            else if (MainMethods.LoanVerf(GlobalUserValues.userIndex) != -1)
+            {
+                return 1;
+            }
+
             if (passwordChecker == GlobalMatrices.usersMatrix[GlobalUserValues.userIndex, 1])
             {
                 return 1;
