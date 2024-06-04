@@ -66,6 +66,12 @@ namespace InterfaceLibraryApp
                 counter++;
                 Close();
             }
+            if(LoanFunctions.FindIDBook(GlobalMatrices.loansMatrix, InsertIdBookLoanUser.Text, GlobalUserValues.userIndex) != -1)
+            {
+                MessageBox.Show("Ya tiene este libro prestado");
+                counter++;
+                Close();
+            }
             int loanIndex = LoanFunctions.LoanChecker(GlobalUserValues.userIndex);
             if(loanIndex == 0)
             {

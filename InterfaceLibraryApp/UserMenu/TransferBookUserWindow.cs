@@ -74,6 +74,12 @@ namespace InterfaceLibraryApp
                 MessageBox.Show("El usuario al que deseas transferir el libro tiene el límite de préstamos alcanzado");
                 Close();
             }
+            if(LoanFunctions.FindIDBook(GlobalMatrices.loansMatrix, bookId, targetUserIndex) != -1)
+            {
+                counter++;
+                MessageBox.Show("El usuario al que deseas transferir el libro ya tiene este libro");
+                Close();
+            }
             if (counter == 0)
             {
                 GlobalMatrices.loansMatrix[targetUserIndex, targetUserLoanPos] = bookId;
