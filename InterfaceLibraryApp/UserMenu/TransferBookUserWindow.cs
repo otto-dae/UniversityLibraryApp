@@ -19,77 +19,56 @@ namespace InterfaceLibraryApp
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            string bookId = IdBookTransferUser.Text;
-            string targetUserId = IdTargetTransferUser.Text;
-            int bookIndexOwner = 0;
-            int dateDifference = 0;
+            string idBook = IdBookTransferUser.Text;
+            string idTargetUser = IdTargetTransferUser.Text;
 
-
-            int targetUserIndex = 0;
-            int targetUserLoanPos = 0;
-            int counter = 0;
-            if(IdBookTransferUser.Text.Length != 6 || IdTargetTransferUser.Text.Length != 6)
+            if(idBook == "" || idTargetUser == "")
             {
-                MessageBox.Show("Por favor, ingresa un ID válido");
+                MessageBox.Show("Porfavor llene los campos");
                 return;
             }
-            if (IdBookTransferUser.Text == "" || IdTargetTransferUser.Text == "")
+            if(idBook.Length != 6 || idTargetUser.Length != 6)
             {
-     
-                MessageBox.Show("Por favor, llena todos los campos");
+                MessageBox.Show("El id del libro y el id del usuario deben tener 6 caracteres");
+                return;
+            }
+            int idBookOwner = LoanFunctions.FindIDBook(GlobalMatrices.loansMatrix, idBook, GlobalUserValues.userIndex);
+            if (idBookOwner == -1)
+            {
+                MessageBox.Show("El libro no se encuentra en su posesión");
+                return;
+            }
+            int idTargetUserIndex = MainMethods.FindID(GlobalMatrices.loansMatrix, idTargetUser);
+            if (idTargetUserIndex == -1)
+            {
+                MessageBox.Show("El usuario al que desea transferir el libro no existe");
+                return;
+            }
+            if(LoanFunctions.BookOwnerChecker(idBook, idTargetUserIndex) == -1)
+            {
+                MessageBox.Show("El usuario ya tiene el libro en su posesión");
+                return;
+            }
+            if (LoanFunctions.DateDiference(GlobalMatrices.loansMatrix[GlobalUserValues.userIndex, idBookOwner + 1]) != 0)
+            {
+                MessageBox.Show("No puede transferir el libro fuera de la ventana de tiempo");
+                return;
+            }
+            int loanPosTarget = LoanFunctions.LoanChecker(idTargetUserIndex);
+            if (loanPosTarget == 0)
+            {
+                MessageBox.Show("El usuario al que desea transferir el libro no tiene espacio para más libros");
                 return;
             }
             else
             {
-                bookIndexOwner = LoanFunctions.FindIDBook(GlobalMatrices.loansMatrix, bookId, GlobalUserValues.userIndex);
-                string dateLoan = GlobalMatrices.loansMatrix[GlobalUserValues.userIndex, bookIndexOwner + 1];
-                dateDifference = LoanFunctions.DateDiference(dateLoan);
-
-                targetUserIndex = MainMethods.FindID(GlobalMatrices.loansMatrix, targetUserId);
-                targetUserLoanPos = LoanFunctions.LoanChecker(targetUserIndex);
-            }
-
-           
-            if (bookIndexOwner == -1)
-            {
-                counter++;
-                MessageBox.Show("El libro no se encuentra en tu posesión");
-                Close();
-            }
-            if(dateDifference != 0)
-            {
-                counter++;
-                MessageBox.Show("No puedes transferir un libro antes de la fecha de entrega");
-                Close();
-            }
-            if(targetUserIndex == -1)
-            {
-                counter++;
-                MessageBox.Show("El usuario al que deseas transferir el libro, no existe");
-                Close();
-            }
-            if(targetUserLoanPos == 0)
-            {
-                counter++;
-                MessageBox.Show("El usuario al que deseas transferir el libro tiene el límite de préstamos alcanzado");
-                Close();
-            }
-            if(LoanFunctions.FindIDBook(GlobalMatrices.loansMatrix, bookId, targetUserIndex) != -1)
-            {
-                counter++;
-                MessageBox.Show("El usuario al que deseas transferir el libro ya tiene este libro");
-                Close();
-            }
-            if (counter == 0)
-            {
-                GlobalMatrices.loansMatrix[targetUserIndex, targetUserLoanPos] = bookId;
-                GlobalMatrices.loansMatrix[targetUserIndex, targetUserLoanPos + 1] = LoanFunctions.LoanDateGenerator();
-                GlobalMatrices.loansMatrix[GlobalUserValues.userIndex, bookIndexOwner] = "ID";
-                GlobalMatrices.loansMatrix[GlobalUserValues.userIndex, bookIndexOwner + 1] = "date";
-                BasicFileFunctions.WriteChanges(GlobalPaths.loansPath, GlobalMatrices.loansMatrix);
+                GlobalMatrices.loansMatrix[idTargetUserIndex, loanPosTarget] = idBook;
+                GlobalMatrices.loansMatrix[idTargetUserIndex, loanPosTarget + 1] = LoanFunctions.LoanDateGenerator();
+                GlobalMatrices.loansMatrix[GlobalUserValues.userIndex, idBookOwner] = "ID";
+                GlobalMatrices.loansMatrix[GlobalUserValues.userIndex, idBookOwner + 1] = "date";
                 MessageBox.Show("Libro transferido con éxito");
-                MainMethods.WriteToLogs($"Usuario {GlobalUserValues.ID} trasnferio a {targetUserId} el libro {bookId}");
-                Close();
+                MainMethods.WriteToLogs($"Libro {idBook} transferido con éxito a {idTargetUser}");
+                BasicFileFunctions.WriteChanges(GlobalPaths.loansPath, GlobalMatrices.loansMatrix);
             }
         }
     }

@@ -269,7 +269,7 @@
             CommentUserButton.FlatStyle = FlatStyle.Popup;
             CommentUserButton.Font = new Font("Segoe UI", 9F);
             CommentUserButton.ForeColor = Color.Black;
-            CommentUserButton.Location = new Point(268, 402);
+            CommentUserButton.Location = new Point(269, 402);
             CommentUserButton.Name = "CommentUserButton";
             CommentUserButton.Size = new Size(82, 23);
             CommentUserButton.TabIndex = 18;

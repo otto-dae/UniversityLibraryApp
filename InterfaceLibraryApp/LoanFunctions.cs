@@ -21,6 +21,17 @@ namespace InterfaceLibraryApp
             }
             return -1;
         }
+        public static int BookOwnerChecker(string idBook, int userIndex)
+        {
+            for (int i = 1; i < GlobalMatrices.loansMatrix.GetLength(1); i++)
+            {
+                if (GlobalMatrices.loansMatrix[userIndex, i].Trim() == idBook.Trim())
+                {
+                    return -1;
+                }
+            }
+            return 1;
+        }   
         public static DateTime DateGen()
         {
             DateTime dateGen = DateTime.Now;
@@ -42,6 +53,17 @@ namespace InterfaceLibraryApp
             return difDays;
         }
         public static int LoanChecker(int userIndex)
+        {
+            for (int i = 1; i < GlobalMatrices.loansMatrix.GetLength(1); i++)
+            {
+                if (GlobalMatrices.loansMatrix[userIndex, i] == "ID")
+                {
+                    return i;
+                }
+            }
+            return 0;
+        }
+        public static int LoanPosTransfer(int userIndex)
         {
             for (int i = 1; i < GlobalMatrices.loansMatrix.GetLength(1); i++)
             {
